@@ -1,4 +1,6 @@
-# JavaScript-reTry
+# JavaScript-ReTry
+[![Build Status][travis-badge]][travis-badge-url]
+
 Re-try implementations about some common, awesome and useful
 APIs, Algorithms and Wheels with modern JavaScript.
 
@@ -11,3 +13,6 @@ npm install
 npm test
 ```
 some contain test file `*.spec.js` and you can have a try.
+
+[travis-badge]: https://travis-ci.org/Flcwl/JavaScript-ReTry.svg?branch=master
+[travis-badge-url]: https://travis-ci.org/Flcwl/JavaScript-ReTry
