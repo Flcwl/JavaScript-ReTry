@@ -1,0 +1,6 @@
+# Third party
+**/node_modules
+
+# test
+/test/
+src/**/*.spec.js

@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - "8"
+before_install:
+  - npm install -g npm  #更新
+  - npm install -g mocha
+install:
+  - npm install
+script:
+  - npm test
+notifications:
+  email:
+    - flcwl@vip.qq.com
+  on_success: change
+  on_failure: always
+cache:
+  directories:
+    - "node_modules"
