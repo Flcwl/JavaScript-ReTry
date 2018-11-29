@@ -3,4 +3,5 @@
 
 # test
 /test/
+# have a question: Invalid for Chinese Path
 src/**/*.spec.js
