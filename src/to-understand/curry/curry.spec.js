@@ -1,7 +1,7 @@
 var toCurry = require('./curry');
 var assert = require('assert')
 
-describe('Curry', () => {
+describe('Curry test', () => {
   // test
   function foo(a, b, c) {
     return [a, b, c];
