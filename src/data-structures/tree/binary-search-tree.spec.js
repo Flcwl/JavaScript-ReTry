@@ -1,4 +1,4 @@
-var BinarySearchTree = require('./binarySearchTree');
+var BinarySearchTree = require('./binary-search-tree');
 var assert = require('assert')
 
 describe('binarySearchTree', () => {
