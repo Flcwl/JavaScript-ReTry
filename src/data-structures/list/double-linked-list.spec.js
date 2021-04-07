@@ -1,8 +1,7 @@
-// import { Node, DoubleLinkedList } from "./double-linked-list";
 var { Node, DoubleLinkedList } = require('./double-linked-list');
 var assert = require("assert");
 
-describe("binarySearchTree", () => {
+describe("DoubleLinkedList", () => {
   const dll = new DoubleLinkedList([8, 3, 10]);
 
   describe("print", () => {
@@ -83,3 +82,10 @@ describe("binarySearchTree", () => {
     });
   });
 });
+
+/**
+ * Relations Problems
+**/
+
+// - https://leetcode.com/problems/lru-cache/
+// - https://leetcode.com/problems/lfu-cache/
