@@ -15,7 +15,7 @@ var isRobotBounded = function (instructions) {
     [0, 1], // 上
     [1, 0], // 右
     [0, -1], // 下
-    [-1, 0], // 左
+    [-1, 0] // 左
   ];
   const p = [0, 0];
   let d = 0;
@@ -24,15 +24,15 @@ var isRobotBounded = function (instructions) {
     const c = instructions[i];
 
     switch (c) {
-      case "G":
+      case 'G':
         const s = dir[d];
         p[0] = p[0] + s[0];
         p[1] = p[1] + s[1];
         break;
-      case "L":
+      case 'L':
         d = (d + 3) % 4;
         break;
-      case "R":
+      case 'R':
         d = (d + 1) % 4;
         break;
       default:
@@ -42,6 +42,6 @@ var isRobotBounded = function (instructions) {
 
   // 走完一圈回到原点 or
   // 走完一圈方向变了（多走3圈必有轮回）
-  return (p[0] === 0 && 0 === p[1]) || d !== 0;
+  return (p[0] === 0 && p[1] === 0) || d !== 0;
 };
 // @lc code=end
