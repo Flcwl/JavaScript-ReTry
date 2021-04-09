@@ -35,3 +35,27 @@ var findMin = function(nums) {
   return nums[l];
 };
 // @lc code=end
+
+var findMin2 = function(nums) {
+  let l = 0;
+  let r = nums.length - 1;
+
+  while (l < r) {
+    // [11,13,15,17]
+    if (nums[l] < nums[r]) {
+      break;
+    }
+
+    const mid = (r + l) >> 1;
+
+    // [4,5,6,7,8,0,1,2]
+    // [6,7,0,1,2,3,4,5]
+    if (nums[l] > nums[mid]) {
+      r = mid;
+    } else {
+      l = mid + 1;
+    }
+  }
+
+  return nums[l];
+};
