@@ -3,32 +3,38 @@
  * @return {number[][]}
  */
 var merge = function(intervals) {
-  intervals = intervals.sort((prev, next) => {
-    return prev[0] - next[0]
-  })
+  intervals.sort((prev, next) => {
+    // 按照 start 从小到大
+    // 如果 start 相同时，则排序 end 从大到小
+    return prev[0] === next[0] ? next[1] - prev[1] : prev[0] - next[0];
+  });
 
-  let ret = []
-  let start = 10e4 + 1
-  let end = -1
+  let prev = intervals[0];
+  let ret = [prev];
+  let t;
 
-  // [[1,3],[2,6],[8,10],[15,18]]
-  for (let i = 0; i < intervals.length; i++) {
-    start = intervals[i][0] // 8
-    end = intervals[i][1] // 10
+  for (let i = 1; i < intervals.length; ++i) {
+    t = intervals[i];
 
-    // 处理排序后的数组，对于重叠的 item 取 end 的最大值
-    while (intervals[i + 1] && intervals[i + 1][0] <= end) {
-      end = Math.max(end, intervals[i + 1][1])
-      console.log(end);
-      i++
+    // 经过排序，后面的必然大于等于前面的
+    // 如果 start 在之前的起始中间，则取两个 end 的最大值
+    if (prev[0] === t[0]) {
+      continue;
+    } else if (t[0] <= prev[1]) {
+      prev[1] = Math.max(prev[1], t[1]);
+    } else {
+      ret.push(t);
+      prev = t;
     }
-
-    ret.push([start, end])
   }
 
-  return ret
+  return ret;
 };
-console.log(
-  merge([[1, 3], [2, 6], [8, 10], [15, 18]])
-
-);
+// console.log(
+//   merge([
+//     [1, 3],
+//     [2, 6],
+//     [8, 10],
+//     [15, 18]
+//   ])
+// );
