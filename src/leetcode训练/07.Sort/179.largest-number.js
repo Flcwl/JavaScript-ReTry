@@ -20,4 +20,4 @@ var largestNumber = function(nums) {
 };
 // @lc code=end
 
-console.log(largestNumber([10, 2]));
+console.log(largestNumber([3, 30, 34, 5, 9]));
