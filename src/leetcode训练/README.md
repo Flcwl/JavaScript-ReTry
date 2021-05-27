@@ -20,8 +20,8 @@
 
 - [] Leetcode 148. Sort List
 - [x] Leetcode 56. Merge Intervals
-- [] Leetcode 179. Largest Number
-- [] Leetcode 75. Sort Colors
+- [x] Leetcode 179. Largest Number
+- [x] Leetcode 75. Sort Colors
 
 #### 进阶（快速选择 Quick Select 算法）
 
