@@ -15,22 +15,27 @@ var sortColors = function(nums) {
   let r = length - 1
   let t
 
-  for (let i = 0; i < length;) {
+  // for (let i = 0; i < length;) {
+  //  i <= r 避免无效的循环
+  for (let i = 0; i <= r;) {
     t = nums[i]
-
+    // [2, 0, 2, 1, 1, 0]
     if (t === 0 && i > l) {
       // 把 0 放在前面，然后 0 的位置长度 + 1
       if (t !== nums[l]) {
         ;[nums[i], nums[l]] = [nums[l], t]
       }
       ++l
+      // 只处理 0 ~ length - 2 的范围，如果是等于末尾同元素，则不处理
     } else if (t === 2 && i < r) {
       // 把 2 放在前面，然后 2 的位置长度 - 1
       if (t !== nums[r]) {
+        // 不相等才交换，避免无效的挪动
         ;[nums[i], nums[r]] = [nums[r], t]
       }
       --r
     } else {
+      // 如果是 1，则不处理，它将会自动归到中间
       ++i
     }
   }
