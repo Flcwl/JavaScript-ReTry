@@ -153,7 +153,9 @@ class DoubleLinkedList {
 
 // @lc code=start
 /**
- * Least Recently Used (每次使用的都标志最近使用，淘汰最近未使用的【末位】)
+ * Least Recently Used (每次使用的后都标志为最近使用，淘汰最近未使用的【末位】)
+ * map 存放键值对
+ * linkList 存放最近使用频率
  *
  * @param {number} capacity
  */
@@ -174,7 +176,6 @@ LRUCache.prototype.get = function(key) {
 
   // 移动位置到最前
   const node = this.KVMap.get(key)
-  // this.put(node.key, node.value)
   this.list.remove(node)
   this.list.unShift(node)
 
@@ -188,7 +189,7 @@ LRUCache.prototype.get = function(key) {
  */
 LRUCache.prototype.put = function(key, value) {
   if (!this.KVMap.has(key)) {
-    // 移除尾部
+    // 空间不足，移除尾部元素
     if (this.capacity === this.list.length) {
       this.KVMap.delete(this.list.tail.key)
       this.list.remove()
@@ -202,9 +203,9 @@ LRUCache.prototype.put = function(key, value) {
   // 移动位置到最前
   const node = this.KVMap.get(key)
   this.list.remove(node)
+  this.list.unShift(node)
 
   node.value = value
-  this.list.unShift(node)
 };
 
 /**
