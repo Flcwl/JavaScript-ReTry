@@ -45,8 +45,8 @@
 
 #### 入门
 
-- [] Leetcode 206. Reverse Linked List
-- [] Leetcode 876. Middle of the Linked List
+- [x] Leetcode 206. Reverse Linked List
+- [x] Leetcode 876. Middle of the Linked List
 
 #### 进阶
 
@@ -67,12 +67,12 @@
 
 ### Problems
 
-Leetcode 225. Implement Stack using Queues
-Leetcode 346. Moving Average from Data Stream
-Leetcode 281. Zigzag Iterator
-Leetcode 1429. First Unique Number
-Leetcode 54. Spiral Matrix
-Leetcode 362. Design Hit Counter
+- [] Leetcode 225. Implement Stack using Queues
+- [] Leetcode 346. Moving Average from Data Stream
+- [] Leetcode 281. Zigzag Iterator
+- [] Leetcode 1429. First Unique Number
+- [] Leetcode 54. Spiral Matrix
+- [] Leetcode 362. Design Hit Counter
 
 ----
 
@@ -175,14 +175,23 @@ Leetcode 1060. Missing Element in Sorted Array
 
 ----
 
-## 2 Pointer（双指针）
+## double Pointer（双指针）
 
-基础知识：常见双指针算法分为三类，同向（即两个指针都相同一个方向移动），背向（两个指针从相同或者相邻的位置出发，背向移动直到其中一根指针到达边界为止），相向（两个指针从两边出发一起向中间移动直到两个指针相遇）
-背向双指针：(基本上全是回文串的题)
+### Features
+
+- 同向（即两个指针都相同一个方向移动）
+- 背向（两个指针从相同或者相邻的位置出发，背向移动直到其中一根指针到达边界为止）
+- 相向（两个指针从两边出发一起向中间移动直到两个指针相遇）
+
+### Problems
+
+#### 背向双指针：(基本上是回文串)
+
 Leetcode 409. Longest Palindrome
 Leetcode 125. Valid Palindrome
 Leetcode 5. Longest Palindromic Substring
-相向双指针：(以two sum为基础的一系列题)
+#### 相向双指针：(以 two sum 为基础的一系列题)
+
 Leetcode 1. Two Sum (这里使用的是先排序的双指针算法，不同于hashmap做法)
 Leetcode 167. Two Sum II - Input array is sorted
 Leetcode 15. 3Sum
@@ -190,7 +199,9 @@ Leetcode 16. 3Sum Closest
 Leetcode 18. 4Sum
 Leetcode 454. 4Sum II
 Leetcode 277. Find the Celebrity
-同向双指针：（个人觉得最难的一类题）
+
+#### 同向双指针：（个人觉得最难的一类题）
+
 Leetcode 283. Move Zeroes
 Leetcode 26. Remove Duplicate Numbers in Array
 Leetcode 395. Longest Substring with At Least K Repeating Characters
@@ -198,33 +209,40 @@ Leetcode 340. Longest Substring with At Most K Distinct Characters
 Leetcode 76. Minimum Window Substring
 Leetcode 3. Longest Substring Without Repeating Characters
 
-宽度优先搜索（BFS）：面试中与DFS都为几乎必考的题目
+## BFS（宽度优先搜索）
 
-基础知识：
-常见的BFS用来解决什么问题？(1) 简单图（有向无向皆可）的最短路径长度（2）拓扑排序 （3） 遍历一个图（或者树）
-BFS基本模板（需要记录层数或者不需要记录层数）
-多数情况下时间复杂度空间复杂度都是O（N+M），N为节点个数，M为边的个数
-基于树的BFS：不需要专门一个set来记录访问过的节点
-Leetcode 102 Binary Tree Level Order Traversal
-Leetcode 103 Binary Tree Zigzag Level Order Traversal
-Leetcode 297 Serialize and Deserialize Binary Tree （很好的BFS和双指针结合的题）
-Leetcode 374 Binary Tree Vertical Order Traversal
-基于图的BFS：（一般需要一个set来记录访问过的节点）
-Leetcode 200. Number of Islands
-Leetcode 133. Clone Graph
-Leetcode 127. Word Ladder
-Leetcode 490. The Maze
-Leetcode 323. Connected Component in Undirected Graph
-Leetcode 130. Surrounded Regions
-Leetcode 752. Open the Lock
-Leetcode 815. Bus Routes
-Leetcode 1091. Shortest Path in Binary Matrix
-Leetcode 542. 01 Matrix
-Leetcode 1293. Shortest Path in a Grid with Obstacles Elimination
-拓扑排序：（https://zh.wikipedia.org/wiki/%E6%8B%93%E6%92%B2%E6%8E%92%E5%BA%8F）
-Leetcode 207 Course Schedule （I, II）
-Leetcode 444 Sequence Reconstruction
-Leetcode 269 Alien Dictionary
+### Features
+
+- 记住层数
+- 不记住层数
+- 多数情况下，时间复杂度和空间复杂度都是 O（N+M），N 为节点个数，M 为边的个数
+- 基于树的BFS：不需要专门一个 set 来记录访问过的节点
+
+### Problems
+
+#### 遍历图（或者树），求最短路径长度
+
+- [] Leetcode 102 Binary Tree Level Order Traversal
+- [] Leetcode 103 Binary Tree Zigzag Level Order Traversal
+- [] Leetcode 297 Serialize and Deserialize Binary Tree （很好的BFS和双指针结合的题）
+- [] Leetcode 374 Binary Tree Vertical Order Traversal
+- [] Leetcode 200. Number of Islands
+- [] Leetcode 133. Clone Graph
+- [] Leetcode 127. Word Ladder
+- [] Leetcode 490. The Maze
+- [] Leetcode 323. Connected Component in Undirected Graph
+- [] Leetcode 130. Surrounded Regions
+- [] Leetcode 752. Open the Lock
+- [] Leetcode 815. Bus Routes
+- [] Leetcode 1091. Shortest Path in Binary Matrix
+- [] Leetcode 542. 01 Matrix
+- [] Leetcode 1293. Shortest Path in a Grid with Obstacles Elimination
+
+#### 拓扑排序（https://zh.wikipedia.org/wiki/%E6%8B%93%E6%92%B2%E6%8E%92%E5%BA%8F）
+
+- [] Leetcode 207 Course Schedule （I, II）
+- [] Leetcode 444 Sequence Reconstruction
+- [] Leetcode 269 Alien Dictionary
 
 深度优先搜索（DFS）：面试中与BFS都为几乎必考的题目
 
