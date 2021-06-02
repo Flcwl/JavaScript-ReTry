@@ -1,6 +1,6 @@
 # LeetCode
 
-以下 8 个门类是面试中最常考的算法与数据结构知识点。
+以下 18 个门类是面试中最常考的算法与数据结构知识点。
 
 ----
 
@@ -67,7 +67,7 @@
 
 ### Problems
 
-- [] Leetcode 225. Implement Stack using Queues
+- [x] Leetcode 225. Implement Stack using Queues
 - [] Leetcode 346. Moving Average from Data Stream
 - [] Leetcode 281. Zigzag Iterator
 - [] Leetcode 1429. First Unique Number
@@ -86,14 +86,14 @@
 
 ### Problems
 
-Leetcode 232. Implement Queue using Stacks
-Leetcode 150. Evaluate Reverse Polish Notation
-Leetcode 224. Basic Calculator II (I, II, III, IV)
-Leetcode 20. Valid Parentheses
-Leetcode 1472. Design Browser History
-Leetcode 1209. Remove All Adjacent Duplicates in String II
-Leetcode 1249. Minimum Remove to Make Valid Parentheses
-Leetcode 735. Asteroid Collision
+- [] Leetcode 232. Implement Queue using Stacks
+- [] Leetcode 150. Evaluate Reverse Polish Notation
+- [] Leetcode 224. Basic Calculator II (I, II, III, IV)
+- [] Leetcode 20. Valid Parentheses
+- [] Leetcode 1472. Design Browser History
+- [] Leetcode 1209. Remove All Adjacent Duplicates in String II
+- [] Leetcode 1249. Minimum Remove to Make Valid Parentheses
+- [] Leetcode 735. Asteroid Collision
 
 ----
 
@@ -244,7 +244,7 @@ Leetcode 3. Longest Substring Without Repeating Characters
 - [] Leetcode 444 Sequence Reconstruction
 - [] Leetcode 269 Alien Dictionary
 
-深度优先搜索（DFS）：面试中与BFS都为几乎必考的题目
+## DFS（深度优先搜索）
 
 基础知识：
 常见的DFS用来解决什么问题？(1) 图中（有向无向皆可）的符合某种特征（比如最长）的路径以及长度（2）排列组合（3） 遍历一个图（或者树）（4）找出图或者树中符合题目要求的全部方案
@@ -264,7 +264,10 @@ Leetcode 987 Vertical Order Traversal of a Binary Tree
 Leetcode 1485 Clone Binary Tree With Random Pointer
 Leetcode 572 Subtree of Another Tree
 Leetcode 863 All Nodes Distance K in Binary Tree
-二叉搜索树（BST）：BST特征：中序遍历为单调递增的二叉树，换句话说，根节点的值比左子树任意节点值都大，比右子树任意节点值都小，增删查改均为O（h）复杂度，h为数的高度；注意不是所有的BST题目都需要递归，有的题目只需要while循环即可
+
+## BST（二叉搜索树）
+
+BST特征：中序遍历为单调递增的二叉树，换句话说，根节点的值比左子树任意节点值都大，比右子树任意节点值都小，增删查改均为O（h）复杂度，h为数的高度；注意不是所有的BST题目都需要递归，有的题目只需要while循环即可
 Leetcode 230 Kth Smallest element in a BST
 Leetcode 98 Validate Binary Search Tree
 Leetcode 270 Cloest Binary Search Tree Value
@@ -306,7 +309,7 @@ Leetcode 72 Edit Distance
 Leetcode 377 Combination Sum IV
 Leetcode 1335 Minimum Difficulty of a Job Schedule
 
-前缀和（Prefix Sum）
+## Prefix Sum（前缀和）
 
 基础知识：前缀和本质上是在一个list当中，用O（N）的时间提前算好从第0个数字到第i个数字之和，在后续使用中可以在O（1）时间内计算出第i到第j个数字之和，一般很少单独作为一道题出现，而是很多题目中的用到的一个小技巧
 常见题目：
@@ -316,7 +319,9 @@ Leetcode 1031 Maximum Sum of Two Non-Overlapping Subarrays
 Leetcode 523 Continuous Subarray Sum
 以上内容皆为面试中高频的知识点，以下知识点和题目在面试中属于中等频率（大概面10道题会遇到一次），时间不足的情况下，请以准备上面的知识点为主。
 
-并查集（Union Find）：把两个或者多个集合合并为一个集合
+## Union Find（并查集）
+
+把两个或者多个集合合并为一个集合
 
 基础知识：如果数据不是实时变化，本类问题可以用BFS或者DFS的方式遍历，如果数据实时变化（data stream）则并查集每次的时间复杂度可以视为O（1）；需要牢记合并与查找两个操作的模板
 常见题目：
@@ -325,7 +330,7 @@ Leetcode 547 Number of Provinces
 Leetcode 737 Sentence Similarity II
 Leetcode 434 Number of Islands II
 
-字典树（Trie）
+## Trie（字典树）
 
 基础知识：（https://zh.wikipedia.org/wiki/Trie）；多数情况下可以通过用一个set来记录所有单词的prefix来替代，时间复杂度不变，但空间复杂度略高
 常见题目：
@@ -334,7 +339,7 @@ Leetcode 211 Design Add and Search Words Data Structure
 Leetcode 1268 Search Suggestions System
 Leetcode 79 Word Search
 
-单调栈与单调队列（Monotone Stack／Queue）
+## Monotone Stack／Queue（单调栈与单调队列）
 
 基础知识：单调栈一般用于解决数组中找出每个数字的第一个大于／小于该数字的位置或者数字；单调队列只见过一道题需要使用；不论单调栈还是单调队列，单调的意思是保留在栈或者队列中的数字是单调递增或者单调递减的
 常见题目：
@@ -345,7 +350,7 @@ Leetcode 901 Online Stock Span
 Leetcode 503 Next Greater Element II
 Leetcode 239 Sliding Window Maximum （唯一的单调队列题）
 
-扫描线算法（Sweep Line）
+## Sweep Line（扫描线算法）
 
 基础知识：一个很巧妙的解决时间安排冲突的算法，本身比较容易些也很容易理解
 常见题目：
@@ -353,7 +358,7 @@ Leetcode 253 Meeting Room II（Meeting Room I也可以使用）
 Leetcode 218 The Skyline Problem
 Leetcode 759 Employee Free Time
 
-TreeMap
+## TreeMap
 
 基础知识：基于红黑树（平衡二叉搜索树）的一种树状 hashmap，增删查改、找求大最小均为logN复杂度，Python当中可以使用SortedDict替代
 常见题目：
@@ -362,7 +367,7 @@ Leetcode 981 Time Based Key-Value Store
 Leetcode 846 Hand of Straights
 Leetcode 826 Most Profit Assigning Work
 
-动态规划（Dynamic Programming）
+## Dynamic Programming（动态规划）
 
 基础知识：这里指的是用for循环方式的动态规划，非Memoization Search方式。DP可以在多项式时间复杂度内解决DFS需要指数级别的问题。常见的题目包括找最大最小，找可行性，找总方案数等，一般结果是一个Integer或者Boolean。动态规划有很多分支，暂时还没想好怎么去写这部分，后面想好了再具体写吧。
 常见题目：
