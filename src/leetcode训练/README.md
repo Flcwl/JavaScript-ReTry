@@ -87,7 +87,7 @@
 ### Problems
 
 - [x] Leetcode 232. Implement Queue using Stacks
-- [] Leetcode 150. Evaluate Reverse Polish Notation
+- [x] Leetcode 150. Evaluate Reverse Polish Notation
 - [] Leetcode 224. Basic Calculator II (I, II, III, IV)
 - [] Leetcode 20. Valid Parentheses
 - [] Leetcode 1472. Design Browser History
