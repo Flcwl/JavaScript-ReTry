@@ -2,17 +2,17 @@
 
 以下 18 个门类是面试中最常考的算法与数据结构知识点。
 
-----
+---
 
 ## Sort
 
 ### Features
 
 - 快速排序（Quick Sort）
-时间复杂度平均状态下O（NlogN），空间复杂度O（1）
+  时间复杂度平均状态下 O（NlogN），空间复杂度 O（1）
 
 - 归并排序（Merge Sort）
-最坏情况下时间复杂度O（NlogN），空间复杂度O（N）
+  最坏情况下时间复杂度 O（NlogN），空间复杂度 O（N）
 
 ### Problems
 
@@ -28,11 +28,11 @@
 - [] Leetcode 215. Kth Largest Element
 - [] Leetcode 4. Median of Two Sorted Arrays
 
-----
+---
 
 ## Linked List
 
-链表可以保证插入删除操作都是O（1），查找任意元素位置O（N）
+链表可以保证插入删除操作都是 O（1），查找任意元素位置 O（N）
 
 ### Features
 
@@ -55,7 +55,7 @@
 - [] Leetcode 92. Reverse Linked List II
 - [] Leetcode 328. Odd Even Linked List
 
-----
+---
 
 ## Queue
 
@@ -74,7 +74,7 @@
 - [] Leetcode 54. Spiral Matrix
 - [] Leetcode 362. Design Hit Counter
 
-----
+---
 
 ## Stack
 
@@ -88,14 +88,14 @@
 
 - [x] Leetcode 232. Implement Queue using Stacks
 - [x] Leetcode 150. Evaluate Reverse Polish Notation
-- [] Leetcode 224. Basic Calculator II (I, II, III, IV)
+- [x] Leetcode 224. Basic Calculator II (I, II, III, IV)
 - [] Leetcode 20. Valid Parentheses
 - [] Leetcode 1472. Design Browser History
 - [] Leetcode 1209. Remove All Adjacent Duplicates in String II
 - [] Leetcode 1249. Minimum Remove to Make Valid Parentheses
 - [] Leetcode 735. Asteroid Collision
 
-----
+---
 
 ## HashMap/ HashSet
 
@@ -117,7 +117,7 @@
 - [] Leetcode 299. Bulls and Cows
 - [] Leetcode 348 Design Tic-Tac-Toe
 
-----
+---
 
 ## Heap／Priority Queue
 
@@ -142,14 +142,14 @@ Leetcode 767. Reorganize String
 Leetcode 1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit
 Leetcode 895. Maximum Frequency Stack
 
-----
+---
 
 ## Binary Search
 
 ### Features
 
-- 时间复杂度logN
-- 显式查找的数据是否可以分为两部分，前半部分为X，后半部分为O
+- 时间复杂度 logN
+- 显式查找的数据是否可以分为两部分，前半部分为 X，后半部分为 O
 - 隐式
 
 ### Problems
@@ -173,7 +173,7 @@ Leetcode 528. Random Pick with Weight
 Leetcode 1300. Sum of Mutated Array Closest to Target
 Leetcode 1060. Missing Element in Sorted Array
 
-----
+---
 
 ## double Pointer（双指针）
 
@@ -190,9 +190,10 @@ Leetcode 1060. Missing Element in Sorted Array
 Leetcode 409. Longest Palindrome
 Leetcode 125. Valid Palindrome
 Leetcode 5. Longest Palindromic Substring
+
 #### 相向双指针：(以 two sum 为基础的一系列题)
 
-Leetcode 1. Two Sum (这里使用的是先排序的双指针算法，不同于hashmap做法)
+Leetcode 1. Two Sum (这里使用的是先排序的双指针算法，不同于 hashmap 做法)
 Leetcode 167. Two Sum II - Input array is sorted
 Leetcode 15. 3Sum
 Leetcode 16. 3Sum Closest
@@ -216,7 +217,7 @@ Leetcode 3. Longest Substring Without Repeating Characters
 - 记住层数
 - 不记住层数
 - 多数情况下，时间复杂度和空间复杂度都是 O（N+M），N 为节点个数，M 为边的个数
-- 基于树的BFS：不需要专门一个 set 来记录访问过的节点
+- 基于树的 BFS：不需要专门一个 set 来记录访问过的节点
 
 ### Problems
 
@@ -224,7 +225,7 @@ Leetcode 3. Longest Substring Without Repeating Characters
 
 - [] Leetcode 102 Binary Tree Level Order Traversal
 - [] Leetcode 103 Binary Tree Zigzag Level Order Traversal
-- [] Leetcode 297 Serialize and Deserialize Binary Tree （很好的BFS和双指针结合的题）
+- [] Leetcode 297 Serialize and Deserialize Binary Tree （很好的 BFS 和双指针结合的题）
 - [] Leetcode 374 Binary Tree Vertical Order Traversal
 - [] Leetcode 200. Number of Islands
 - [] Leetcode 133. Clone Graph
@@ -247,11 +248,11 @@ Leetcode 3. Longest Substring Without Repeating Characters
 ## DFS（深度优先搜索）
 
 基础知识：
-常见的DFS用来解决什么问题？(1) 图中（有向无向皆可）的符合某种特征（比如最长）的路径以及长度（2）排列组合（3） 遍历一个图（或者树）（4）找出图或者树中符合题目要求的全部方案
-DFS基本模板（需要记录路径，不需要返回值 and 不需要记录路径，但需要记录某些特征的返回值）
-除了遍历之外多数情况下时间复杂度是指数级别，一般是O(方案数×找到每个方案的时间复杂度)
+常见的 DFS 用来解决什么问题？(1) 图中（有向无向皆可）的符合某种特征（比如最长）的路径以及长度（2）排列组合（3） 遍历一个图（或者树）（4）找出图或者树中符合题目要求的全部方案
+DFS 基本模板（需要记录路径，不需要返回值 and 不需要记录路径，但需要记录某些特征的返回值）
+除了遍历之外多数情况下时间复杂度是指数级别，一般是 O(方案数 × 找到每个方案的时间复杂度)
 递归题目都可以用非递归迭代的方法写，但一般实现起来非常麻烦
-基于树的DFS：需要记住递归写前序中序后序遍历二叉树的模板
+基于树的 DFS：需要记住递归写前序中序后序遍历二叉树的模板
 Leetcode 543 Diameter of Binary Tree
 Leetcode 226 Invert Binary Tree
 Leetcode 124 Binary Tree Maximum Path Sum
@@ -267,7 +268,7 @@ Leetcode 863 All Nodes Distance K in Binary Tree
 
 ## BST（二叉搜索树）
 
-BST特征：中序遍历为单调递增的二叉树，换句话说，根节点的值比左子树任意节点值都大，比右子树任意节点值都小，增删查改均为O（h）复杂度，h为数的高度；注意不是所有的BST题目都需要递归，有的题目只需要while循环即可
+BST 特征：中序遍历为单调递增的二叉树，换句话说，根节点的值比左子树任意节点值都大，比右子树任意节点值都小，增删查改均为 O（h）复杂度，h 为数的高度；注意不是所有的 BST 题目都需要递归，有的题目只需要 while 循环即可
 Leetcode 230 Kth Smallest element in a BST
 Leetcode 98 Validate Binary Search Tree
 Leetcode 270 Cloest Binary Search Tree Value
@@ -277,12 +278,12 @@ Leetcode 700 Search Range in Binary Search Tree
 Leetcode 108 Convert Sorted Array to Binary Search Tree
 Leetcode 333 Largest BST Subtree
 Leetcode 510 Inorder Successor in BST II
-基于图的DFS: 和BFS一样一般需要一个set来记录访问过的节点，避免重复访问造成死循环
+基于图的 DFS: 和 BFS 一样一般需要一个 set 来记录访问过的节点，避免重复访问造成死循环
 Leetcode 341 Flatten Nested List Iterator
 Leetcode 394 Decode String
 Leetcode 51 N-Queens
-Leetcode 291 Word Pattern II (I为简单的Hashmap题)
-Leetcode 126 Word Ladder II （I为BFS题目）
+Leetcode 291 Word Pattern II (I 为简单的 Hashmap 题)
+Leetcode 126 Word Ladder II （I 为 BFS 题目）
 Leetcode 1110 Delete Nodes And Return Forest
 Leetcode 93 Restore IP Addresses
 Leetcode 22 Generate Parentheses
@@ -295,14 +296,14 @@ Leetcode 1274 Number of Ships in a Rectangle
 Leetcode 1376 Time Needed to Inform All Employees
 Leetcode 694 Number of Distinct Islands
 Leetcode 586 Score of Parentheses
-基于排列组合的DFS: 其实与图类DFS方法一致，但是排列组合的特征更明显
+基于排列组合的 DFS: 其实与图类 DFS 方法一致，但是排列组合的特征更明显
 Leetcode 17 Letter Combinations of a Phone Number
 Leetcode 39 Combination Sum （I, II, III, IV）
 Leetcode 90 Subsets II （重点在于如何去重）
 Leetcode 47 Permutation II
 Leetcode 77 Combinations
 Leetcode 526 Beautiful Arrangement
-记忆化搜索（DFS + Memoization Search）：算是动态规划的一种，递归每次返回时同时记录下已访问过的节点特征，避免重复访问同一个节点，可以有效的把指数级别的DFS时间复杂度降为多项式级别
+记忆化搜索（DFS + Memoization Search）：算是动态规划的一种，递归每次返回时同时记录下已访问过的节点特征，避免重复访问同一个节点，可以有效的把指数级别的 DFS 时间复杂度降为多项式级别
 Leetcode 139 Word Break II
 Leetcode 131 Palindrome Partitioning
 Leetcode 72 Edit Distance
@@ -311,19 +312,19 @@ Leetcode 1335 Minimum Difficulty of a Job Schedule
 
 ## Prefix Sum（前缀和）
 
-基础知识：前缀和本质上是在一个list当中，用O（N）的时间提前算好从第0个数字到第i个数字之和，在后续使用中可以在O（1）时间内计算出第i到第j个数字之和，一般很少单独作为一道题出现，而是很多题目中的用到的一个小技巧
+基础知识：前缀和本质上是在一个 list 当中，用 O（N）的时间提前算好从第 0 个数字到第 i 个数字之和，在后续使用中可以在 O（1）时间内计算出第 i 到第 j 个数字之和，一般很少单独作为一道题出现，而是很多题目中的用到的一个小技巧
 常见题目：
 Leetcode 53 Maximum Subarray
 Leetcode 1423 Maximum Points You Can Obtain from Cards
 Leetcode 1031 Maximum Sum of Two Non-Overlapping Subarrays
 Leetcode 523 Continuous Subarray Sum
-以上内容皆为面试中高频的知识点，以下知识点和题目在面试中属于中等频率（大概面10道题会遇到一次），时间不足的情况下，请以准备上面的知识点为主。
+以上内容皆为面试中高频的知识点，以下知识点和题目在面试中属于中等频率（大概面 10 道题会遇到一次），时间不足的情况下，请以准备上面的知识点为主。
 
 ## Union Find（并查集）
 
 把两个或者多个集合合并为一个集合
 
-基础知识：如果数据不是实时变化，本类问题可以用BFS或者DFS的方式遍历，如果数据实时变化（data stream）则并查集每次的时间复杂度可以视为O（1）；需要牢记合并与查找两个操作的模板
+基础知识：如果数据不是实时变化，本类问题可以用 BFS 或者 DFS 的方式遍历，如果数据实时变化（data stream）则并查集每次的时间复杂度可以视为 O（1）；需要牢记合并与查找两个操作的模板
 常见题目：
 Leetcode 721 Accounts Merge
 Leetcode 547 Number of Provinces
@@ -354,13 +355,13 @@ Leetcode 239 Sliding Window Maximum （唯一的单调队列题）
 
 基础知识：一个很巧妙的解决时间安排冲突的算法，本身比较容易些也很容易理解
 常见题目：
-Leetcode 253 Meeting Room II（Meeting Room I也可以使用）
+Leetcode 253 Meeting Room II（Meeting Room I 也可以使用）
 Leetcode 218 The Skyline Problem
 Leetcode 759 Employee Free Time
 
 ## TreeMap
 
-基础知识：基于红黑树（平衡二叉搜索树）的一种树状 hashmap，增删查改、找求大最小均为logN复杂度，Python当中可以使用SortedDict替代
+基础知识：基于红黑树（平衡二叉搜索树）的一种树状 hashmap，增删查改、找求大最小均为 logN 复杂度，Python 当中可以使用 SortedDict 替代
 常见题目：
 Leetcode 729 My Calendar I
 Leetcode 981 Time Based Key-Value Store
@@ -369,7 +370,7 @@ Leetcode 826 Most Profit Assigning Work
 
 ## Dynamic Programming（动态规划）
 
-基础知识：这里指的是用for循环方式的动态规划，非Memoization Search方式。DP可以在多项式时间复杂度内解决DFS需要指数级别的问题。常见的题目包括找最大最小，找可行性，找总方案数等，一般结果是一个Integer或者Boolean。动态规划有很多分支，暂时还没想好怎么去写这部分，后面想好了再具体写吧。
+基础知识：这里指的是用 for 循环方式的动态规划，非 Memoization Search 方式。DP 可以在多项式时间复杂度内解决 DFS 需要指数级别的问题。常见的题目包括找最大最小，找可行性，找总方案数等，一般结果是一个 Integer 或者 Boolean。动态规划有很多分支，暂时还没想好怎么去写这部分，后面想好了再具体写吧。
 常见题目：
 Leetcode 674 Longest Continuous Increasing Subsequence
 Leetcode 62 Unique Paths II
