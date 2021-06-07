@@ -130,7 +130,7 @@
 ### Problems
 
 - [x] Leetcode 973. K Closest Points
-- [] Leetcode 347. Top k Largest Elements
+- [x] Leetcode 347. Top k Largest Elements
 - [] Leetcode 23. Merge K Sorted Lists
 - [] Leetcode 264. Ugly Number II
 - [] Leetcode 1086. High Five
@@ -157,13 +157,13 @@
 
 #### 显式二分法
 
-Leetcode 34. Find First and Last Position of Element in Sorted Array
-Leetcode 33. Search in Rotated Sorted Array
-Leetcode 1095. Find in Mountain Array
-Leetcode 162. Find Peak Element
-Leetcode 278. First Bad Version
-Leetcode 74. Search a 2D Matrix
-Leetcode 240. Search a 2D Matrix II
+- [] Leetcode 34. Find First and Last Position of Element in - Sorted [] Array
+- [] Leetcode 33. Search in Rotated Sorted Array
+- [] Leetcode 1095. Find in Mountain Array
+- [] Leetcode 162. Find Peak Element
+- [] Leetcode 278. First Bad Version
+- [] Leetcode 74. Search a 2D Matrix
+- [] Leetcode 240. Search a 2D Matrix II
 
 #### 隐式二分法
 
@@ -313,24 +313,25 @@ Leetcode 1335 Minimum Difficulty of a Job Schedule
 
 ## Prefix Sum（前缀和）
 
-基础知识：前缀和本质上是在一个 list 当中，用 O（N）的时间提前算好从第 0 个数字到第 i 个数字之和，在后续使用中可以在 O（1）时间内计算出第 i 到第 j 个数字之和，一般很少单独作为一道题出现，而是很多题目中的用到的一个小技巧
-常见题目：
-Leetcode 53 Maximum Subarray
-Leetcode 1423 Maximum Points You Can Obtain from Cards
-Leetcode 1031 Maximum Sum of Two Non-Overlapping Subarrays
-Leetcode 523 Continuous Subarray Sum
-以上内容皆为面试中高频的知识点，以下知识点和题目在面试中属于中等频率（大概面 10 道题会遇到一次），时间不足的情况下，请以准备上面的知识点为主。
+- 提前用 O（N）的时间提前算好从第 0 个数字到第 i 个数字之和
+- 之后在使用中可以在 O（1）时间内计算出第 i 到第 j 个数字之和
+
+- [] Leetcode 53 Maximum Subarray
+- [] Leetcode 1423 Maximum Points You Can Obtain from Cards
+- [] Leetcode 1031 Maximum Sum of Two Non-Overlapping Subarrays
+- [] Leetcode 523 Continuous Subarray Sum
 
 ## Union Find（并查集）
 
-把两个或者多个集合合并为一个集合
+把两个或者多个集合合并为一个集合，包含合并与查找两个操作
 
-基础知识：如果数据不是实时变化，本类问题可以用 BFS 或者 DFS 的方式遍历，如果数据实时变化（data stream）则并查集每次的时间复杂度可以视为 O（1）；需要牢记合并与查找两个操作的模板
-常见题目：
-Leetcode 721 Accounts Merge
-Leetcode 547 Number of Provinces
-Leetcode 737 Sentence Similarity II
-Leetcode 434 Number of Islands II
+- 如果数据不是实时变化，本类问题可以用 BFS 或者 DFS 的方式遍历
+- 如果数据实时变化（data stream）则并查集每次的时间复杂度可以视为 O（1）
+
+- [] Leetcode 721 Accounts Merge
+- [] Leetcode 547 Number of Provinces
+- [] Leetcode 737 Sentence Similarity II
+- [] Leetcode 434 Number of Islands II
 
 ## Trie（字典树）
 
