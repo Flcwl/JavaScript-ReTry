@@ -188,9 +188,9 @@
 
 #### 背向双指针：(基本上是回文串)
 
-Leetcode 409. Longest Palindrome
-Leetcode 125. Valid Palindrome
-Leetcode 5. Longest Palindromic Substring
+- [x] Leetcode 409. Longest Palindrome
+- [] Leetcode 125. Valid Palindrome
+- [] Leetcode 5. Longest Palindromic Substring
 
 #### 相向双指针：(以 two sum 为基础的一系列题)
 
