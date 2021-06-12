@@ -189,35 +189,34 @@
 
 #### 背向双指针：(基本上是回文串)
 
-- [] Leetcode 125. Valid Palindrome
+- [x] Leetcode 125. Valid Palindrome
 - [] Leetcode 5. Longest Palindromic Substring
 
 #### 相向双指针：(以 two sum 为基础的一系列题)
 
-Leetcode 1. Two Sum (这里使用的是先排序的双指针算法，不同于 hashmap 做法)
-Leetcode 167. Two Sum II - Input array is sorted
-Leetcode 15. 3Sum
-Leetcode 16. 3Sum Closest
-Leetcode 18. 4Sum
-Leetcode 454. 4Sum II
-Leetcode 277. Find the Celebrity
+- [] Leetcode 1. Two Sum (这里使用的是先排序的双指针算法，不同于 hashmap 做法)
+- [] Leetcode 167. Two Sum II - Input array is sorted
+- [] Leetcode 15. 3Sum
+- [] Leetcode 16. 3Sum Closest
+- [] Leetcode 18. 4Sum
+- [] Leetcode 454. 4Sum II
+- [] Leetcode 277. Find the Celebrity
 
 #### 同向双指针：（个人觉得最难的一类题）
 
-Leetcode 283. Move Zeroes
-Leetcode 26. Remove Duplicate Numbers in Array
-Leetcode 395. Longest Substring with At Least K Repeating Characters
-Leetcode 340. Longest Substring with At Most K Distinct Characters
-Leetcode 76. Minimum Window Substring
-Leetcode 3. Longest Substring Without Repeating Characters
+- [] Leetcode 283. Move Zeroes
+- [] Leetcode 26. Remove Duplicate Numbers in Array
+- [] Leetcode 395. Longest Substring with At Least K Repeating Characters
+- [] Leetcode 340. Longest Substring with At Most K Distinct Characters
+- [] Leetcode 3. Longest Substring Without Repeating Characters
+- [] Leetcode 76. Minimum Window Substring
 
 ## BFS（宽度优先搜索）
 
 ### Features
 
-- 记住层数
-- 不记住层数
-- 多数情况下，时间复杂度和空间复杂度都是 O（N+M），N 为节点个数，M 为边的个数
+- 记住层数 && 不记住层数
+- 时间复杂度和空间复杂度都是 O（N+M），N 为节点个数，M 为边的个数
 - 基于树的 BFS：不需要专门一个 set 来记录访问过的节点
 
 ### Problems
@@ -248,24 +247,32 @@ Leetcode 3. Longest Substring Without Repeating Characters
 
 ## DFS（深度优先搜索）
 
-基础知识：
-常见的 DFS 用来解决什么问题？(1) 图中（有向无向皆可）的符合某种特征（比如最长）的路径以及长度（2）排列组合（3） 遍历一个图（或者树）（4）找出图或者树中符合题目要求的全部方案
+### Features
+
+（1）图中（有向无向皆可）的符合某种特征（比如最长）的路径以及长度
+（2）排列组合
+（3）遍历一个图（或者树）
+（4）找出图或者树中符合题目要求的全部方案
+
 DFS 基本模板（需要记录路径，不需要返回值 and 不需要记录路径，但需要记录某些特征的返回值）
 除了遍历之外多数情况下时间复杂度是指数级别，一般是 O(方案数 × 找到每个方案的时间复杂度)
 递归题目都可以用非递归迭代的方法写，但一般实现起来非常麻烦
 基于树的 DFS：需要记住递归写前序中序后序遍历二叉树的模板
-Leetcode 543 Diameter of Binary Tree
-Leetcode 226 Invert Binary Tree
-Leetcode 124 Binary Tree Maximum Path Sum
-Leetcode 236 Lowest Common Ancestor of a Binary Tree
-Leetcode 101 Symmetric Tree
-Leetcode 105 Construct Binary Tree from Preorder and Inorder Traversal
-Leetcode 104 Maximum Depth of Binary Tree
-Leetcode 951 Flip Equivalent Binary Trees
-Leetcode 987 Vertical Order Traversal of a Binary Tree
-Leetcode 1485 Clone Binary Tree With Random Pointer
-Leetcode 572 Subtree of Another Tree
-Leetcode 863 All Nodes Distance K in Binary Tree
+
+### Problems
+
+- [] Leetcode 543 Diameter of Binary Tree
+- [] Leetcode 226 Invert Binary Tree
+- [] Leetcode 124 Binary Tree Maximum Path Sum
+- [] Leetcode 236 Lowest Common Ancestor of a Binary Tree
+- [] Leetcode 101 Symmetric Tree
+- [] Leetcode 105 Construct Binary Tree from Preorder and Inorder Traversal
+- [] Leetcode 104 Maximum Depth of Binary Tree
+- [] Leetcode 951 Flip Equivalent Binary Trees
+- [] Leetcode 987 Vertical Order Traversal of a Binary Tree
+- [] Leetcode 1485 Clone Binary Tree With Random Pointer
+- [] Leetcode 572 Subtree of Another Tree
+- [] Leetcode 863 All Nodes Distance K in Binary Tree
 
 ## BST（二叉搜索树）
 
@@ -313,8 +320,12 @@ Leetcode 1335 Minimum Difficulty of a Job Schedule
 
 ## Prefix Sum（前缀和）
 
+### Features
+
 - 提前用 O（N）的时间提前算好从第 0 个数字到第 i 个数字之和
 - 之后在使用中可以在 O（1）时间内计算出第 i 到第 j 个数字之和
+
+### Problems
 
 - [] Leetcode 53 Maximum Subarray
 - [] Leetcode 1423 Maximum Points You Can Obtain from Cards
@@ -325,8 +336,12 @@ Leetcode 1335 Minimum Difficulty of a Job Schedule
 
 把两个或者多个集合合并为一个集合，包含合并与查找两个操作
 
+### Features
+
 - 如果数据不是实时变化，本类问题可以用 BFS 或者 DFS 的方式遍历
 - 如果数据实时变化（data stream）则并查集每次的时间复杂度可以视为 O（1）
+
+### Problems
 
 - [] Leetcode 721 Accounts Merge
 - [] Leetcode 547 Number of Provinces
@@ -335,12 +350,19 @@ Leetcode 1335 Minimum Difficulty of a Job Schedule
 
 ## Trie（字典树）
 
-基础知识：（https://zh.wikipedia.org/wiki/Trie）；多数情况下可以通过用一个set来记录所有单词的prefix来替代，时间复杂度不变，但空间复杂度略高
-常见题目：
-Leetcode 208 Implement Trie (Prefix Tree)
-Leetcode 211 Design Add and Search Words Data Structure
-Leetcode 1268 Search Suggestions System
-Leetcode 79 Word Search
+- https://zh.wikipedia.org/wiki/Trie
+
+### Features
+
+- 多数情况下可以通过用一个 set 来记录所有单词的 prefix 来替代
+- 时间复杂度不变，但空间复杂度略高
+
+### Problems
+
+- [] Leetcode 208 Implement Trie (Prefix Tree)
+- [] Leetcode 211 Design Add and Search Words Data Structure
+- [] Leetcode 1268 Search Suggestions System
+- [] Leetcode 79 Word Search
 
 ## Monotone Stack／Queue（单调栈与单调队列）
 

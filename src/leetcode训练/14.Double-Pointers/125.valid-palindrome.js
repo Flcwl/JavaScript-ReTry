@@ -37,11 +37,11 @@ var isPalindrome = function (s) {
     // 两个指针指向不相等，则表明非回文
     if (s[l].toLowerCase() !== s[r].toLowerCase()) {
       return false;
-    } else {
-      // 否则一直加到底，遍历完整个字符串
-      l++;
-      r--;
     }
+
+    // 否则一直加到底，遍历完整个字符串
+    l++;
+    r--;
   }
 
   return true;
