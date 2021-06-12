@@ -108,6 +108,7 @@
 ### Problems
 
 - [x] Leetcode 1. Two Sum
+- [x] Leetcode 409. Longest Palindrome
 - [x] Leetcode 146. LRU Cache
 - [x] Leetcode 128. Longest Consecutive Sequence
 - [] Leetcode 73. Set Matrix Zeroes
@@ -188,7 +189,6 @@
 
 #### 背向双指针：(基本上是回文串)
 
-- [x] Leetcode 409. Longest Palindrome
 - [] Leetcode 125. Valid Palindrome
 - [] Leetcode 5. Longest Palindromic Substring
 
