@@ -343,7 +343,7 @@ Leetcode 1335 Minimum Difficulty of a Job Schedule
 
 ### Problems
 
-- [] Leetcode 721 Accounts Merge
+- [x] Leetcode 721 Accounts Merge
 - [] Leetcode 547 Number of Provinces
 - [] Leetcode 737 Sentence Similarity II
 - [] Leetcode 434 Number of Islands II
@@ -359,7 +359,7 @@ Leetcode 1335 Minimum Difficulty of a Job Schedule
 
 ### Problems
 
-- [] Leetcode 208 Implement Trie (Prefix Tree)
+- [x] Leetcode 208 Implement Trie (Prefix Tree)
 - [] Leetcode 211 Design Add and Search Words Data Structure
 - [] Leetcode 1268 Search Suggestions System
 - [] Leetcode 79 Word Search
