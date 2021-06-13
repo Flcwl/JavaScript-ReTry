@@ -194,7 +194,7 @@
 
 #### 相向双指针：(以 two sum 为基础的一系列题)
 
-- [] Leetcode 1. Two Sum (这里使用的是先排序的双指针算法，不同于 hashmap 做法)
+- [] Leetcode 1. Two Sum (先排序的双指针算法)
 - [] Leetcode 167. Two Sum II - Input array is sorted
 - [] Leetcode 15. 3Sum
 - [] Leetcode 16. 3Sum Closest
@@ -327,7 +327,7 @@ Leetcode 1335 Minimum Difficulty of a Job Schedule
 
 ### Problems
 
-- [] Leetcode 53 Maximum Subarray
+- [x] Leetcode 53 Maximum Subarray
 - [] Leetcode 1423 Maximum Points You Can Obtain from Cards
 - [] Leetcode 1031 Maximum Sum of Two Non-Overlapping Subarrays
 - [] Leetcode 523 Continuous Subarray Sum
