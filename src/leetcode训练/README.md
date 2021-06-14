@@ -242,6 +242,76 @@ DFS 基本模板（需要记录路径，不需要返回值 and 不需要记录�
 - [] Leetcode 572 Subtree of Another Tree
 - [] Leetcode 863 All Nodes Distance K in Binary Tree
 
+#### 二叉搜索树
+
+- 中序遍历为单调递增的二叉树
+- 根节点的值比左子树任意节点值都大，比右子树任意节点值都小
+- 增删查改均为 O（h）复杂度，h 为树的高度；
+- 注意不是所有的 BST 题目都需要递归，有的题目只需要 while 循环即可
+
+### Problems
+
+- [x] Leetcode 230 Kth Smallest element in a BST
+- [] Leetcode 98 Validate Binary Search Tree
+- [] Leetcode 270 Cloest Binary Search Tree Value
+- [] Leetcode 235 Lowest Common Ancestor of a Binary Search Tree
+- [] Leetcode 669 Trim a Binary Search Tree
+- [] Leetcode 700 Search Range in Binary Search Tree
+- [] Leetcode 108 Convert Sorted Array to Binary Search Tree
+- [] Leetcode 333 Largest BST Subtree
+- [] Leetcode 510 Inorder Successor in BST II
+
+#### 图搜索 DFS
+
+- 和 BFS 一样一般需要一个 set 来记录访问过的节点
+- 避免重复访问造成死循环
+
+### Problems
+
+- [] Leetcode 341 Flatten Nested List Iterator
+- [] Leetcode 394 Decode String
+- [] Leetcode 51 N-Queens
+- [] Leetcode 291 Word Pattern II (I 为简单的 Hashmap 题)
+- [] Leetcode 126 Word Ladder II （I 为 BFS 题目）
+- [] Leetcode 1110 Delete Nodes And Return Forest
+- [] Leetcode 93 Restore IP Addresses
+- [] Leetcode 22 Generate Parentheses
+- [] Leetcode 37 Sodoku Solver
+- [] Leetcode 301 Remove Invalid Parentheses
+- [] Leetcode 212 Word Search II （I, II）
+- [] Leetcode 1087 Brace Expansion
+- [] Leetcode 399 Evaluate Division
+- [] Leetcode 1274 Number of Ships in a Rectangle
+- [] Leetcode 1376 Time Needed to Inform All Employees
+- [] Leetcode 694 Number of Distinct Islands
+- [] Leetcode 586 Score of Parentheses
+
+#### 排列组合搜索 DFS
+
+- 与图类 DFS 方法一致，但是排列组合的特征更明显
+
+### Problems
+
+Leetcode 17 Letter Combinations of a Phone Number
+Leetcode 39 Combination Sum （I, II, III, IV）
+Leetcode 90 Subsets II （重点在于如何去重）
+Leetcode 47 Permutation II
+Leetcode 77 Combinations
+Leetcode 526 Beautiful Arrangement
+
+#### 记忆化搜索（DFS + Memoization Search）
+
+- 算是动态规划的一种，
+- 递归每次返回时同时记录下已访问过的节点特征，避免重复访问同一个节点，可以有效的把指数级别的 DFS 时间复杂度降为多项式级别
+
+### Problems
+
+Leetcode 139 Word Break II
+Leetcode 131 Palindrome Partitioning
+Leetcode 72 Edit Distance
+Leetcode 377 Combination Sum IV
+Leetcode 1335 Minimum Difficulty of a Job Schedule
+
 ## 10. BFS（宽度优先搜索）
 
 ### Features
@@ -277,50 +347,6 @@ DFS 基本模板（需要记录路径，不需要返回值 and 不需要记录�
 - [] Leetcode 269 Alien Dictionary
 
 ---
-
-## 11. BST（二叉搜索树）
-
-BST 特征：中序遍历为单调递增的二叉树，换句话说，根节点的值比左子树任意节点值都大，比右子树任意节点值都小，增删查改均为 O（h）复杂度，h 为数的高度；注意不是所有的 BST 题目都需要递归，有的题目只需要 while 循环即可
-Leetcode 230 Kth Smallest element in a BST
-Leetcode 98 Validate Binary Search Tree
-Leetcode 270 Cloest Binary Search Tree Value
-Leetcode 235 Lowest Common Ancestor of a Binary Search Tree
-Leetcode 669 Trim a Binary Search Tree
-Leetcode 700 Search Range in Binary Search Tree
-Leetcode 108 Convert Sorted Array to Binary Search Tree
-Leetcode 333 Largest BST Subtree
-Leetcode 510 Inorder Successor in BST II
-基于图的 DFS: 和 BFS 一样一般需要一个 set 来记录访问过的节点，避免重复访问造成死循环
-Leetcode 341 Flatten Nested List Iterator
-Leetcode 394 Decode String
-Leetcode 51 N-Queens
-Leetcode 291 Word Pattern II (I 为简单的 Hashmap 题)
-Leetcode 126 Word Ladder II （I 为 BFS 题目）
-Leetcode 1110 Delete Nodes And Return Forest
-Leetcode 93 Restore IP Addresses
-Leetcode 22 Generate Parentheses
-Leetcode 37 Sodoku Solver
-Leetcode 301 Remove Invalid Parentheses
-Leetcode 212 Word Search II （I, II）
-Leetcode 1087 Brace Expansion
-Leetcode 399 Evaluate Division
-Leetcode 1274 Number of Ships in a Rectangle
-Leetcode 1376 Time Needed to Inform All Employees
-Leetcode 694 Number of Distinct Islands
-Leetcode 586 Score of Parentheses
-基于排列组合的 DFS: 其实与图类 DFS 方法一致，但是排列组合的特征更明显
-Leetcode 17 Letter Combinations of a Phone Number
-Leetcode 39 Combination Sum （I, II, III, IV）
-Leetcode 90 Subsets II （重点在于如何去重）
-Leetcode 47 Permutation II
-Leetcode 77 Combinations
-Leetcode 526 Beautiful Arrangement
-记忆化搜索（DFS + Memoization Search）：算是动态规划的一种，递归每次返回时同时记录下已访问过的节点特征，避免重复访问同一个节点，可以有效的把指数级别的 DFS 时间复杂度降为多项式级别
-Leetcode 139 Word Break II
-Leetcode 131 Palindrome Partitioning
-Leetcode 72 Edit Distance
-Leetcode 377 Combination Sum IV
-Leetcode 1335 Minimum Difficulty of a Job Schedule
 
 ## 12. Trie（字典树）
 
