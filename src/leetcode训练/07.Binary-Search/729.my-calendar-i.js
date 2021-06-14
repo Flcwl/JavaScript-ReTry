@@ -25,7 +25,7 @@ MyCalendar.prototype.book = function (start, end) {
     const [s, e] = this.list[mid];
     // 根据题意 start <= x < end，区间属于“左闭右开”
     // 判断区间重合：不重合（区间分离）的反例
-
+    // overlap 公式：Max(s1, s2) < Max(e1, e2)
     if (!(end <= s || start >= e)) {
       console.log(start);
       return false;
