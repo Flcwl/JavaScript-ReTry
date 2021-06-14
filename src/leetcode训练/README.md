@@ -340,12 +340,17 @@ Leetcode 1335 Minimum Difficulty of a Job Schedule
 
 ## 13. TreeMap
 
-基础知识：基于红黑树（平衡二叉搜索树）的一种树状 hashmap，增删查改、找求大最小均为 logN 复杂度，Python 当中可以使用 SortedDict 替代
-常见题目：
-Leetcode 729 My Calendar I
-Leetcode 981 Time Based Key-Value Store
-Leetcode 846 Hand of Straights
-Leetcode 826 Most Profit Assigning Work
+### Features
+
+- 基于红黑树（平衡二叉搜索树）的一种树状 hashmap
+- 增删查改、找最大最小均为 logN 复杂度
+
+### Problems
+
+- [x] Leetcode 729 My Calendar I
+- [] Leetcode 981 Time Based Key-Value Store
+- [] Leetcode 846 Hand of Straights
+- [] Leetcode 826 Most Profit Assigning Work
 
 ## 14. Prefix Sum（前缀和）
 
@@ -379,14 +384,19 @@ Leetcode 826 Most Profit Assigning Work
 
 ## 16.Monotone Stack／Queue（单调栈与单调队列）
 
-基础知识：单调栈一般用于解决数组中找出每个数字的第一个大于／小于该数字的位置或者数字；单调队列只见过一道题需要使用；不论单调栈还是单调队列，单调的意思是保留在栈或者队列中的数字是单调递增或者单调递减的
-常见题目：
-Leetcode 85 Maximum Rectangle
-Leetcode 84 Largest Rectangle in Histogram
-Leetcode 739 Daily Temperatures
-Leetcode 901 Online Stock Span
-Leetcode 503 Next Greater Element II
-Leetcode 239 Sliding Window Maximum （唯一的单调队列题）
+### Features
+
+- 单调的意思是保留在栈或者队列中的数字是单调递增或者单调递减的
+- 单调栈一般用于解决数组中找出每个数字的第一个大于／小于该数字的位置或者数字
+
+### Problems
+
+- [] Leetcode 84 Largest Rectangle in Histogram
+- [] Leetcode 85 Maximum Rectangle
+- [] Leetcode 739 Daily Temperatures
+- [] Leetcode 901 Online Stock Span
+- [] Leetcode 503 Next Greater Element II
+- [] Leetcode 239 Sliding Window Maximum （唯一的单调队列题）
 
 ## 17. Sweep Line（扫描线算法）
 
