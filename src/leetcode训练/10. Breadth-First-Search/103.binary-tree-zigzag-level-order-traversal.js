@@ -1,31 +1,8 @@
 /*
- * @lc app=leetcode id=102 lang=javascript
+ * @lc app=leetcode id=103 lang=javascript
  *
- * [102] Binary Tree Level Order Traversal
+ * [103] Binary Tree Zigzag Level Order Traversal
  */
-
-var levelOrder = function (root) {
-  const ret = [];
-
-  // 递归实现，n 标识当前层
-  function traverse(node, n) {
-    if (!node) return;
-
-    // 使用 ret.length 来表示之前的层数
-    // 标识到了下一层，并且下一层有节点
-    // if (n > ret.length) ret[n] = [];
-    // ret[n].push(node.val);
-
-    (ret[n] = ret[n] || []).push(node.val);
-
-    traverse(node.left, n + 1);
-    traverse(node.right, n + 1);
-  }
-
-  traverse(root, 0);
-
-  return ret;
-};
 
 // @lc code=start
 /**
@@ -40,7 +17,7 @@ var levelOrder = function (root) {
  * @param {TreeNode} root
  * @return {number[][]}
  */
-var levelOrder = function (root) {
+var zigzagLevelOrder = function (root) {
   const ret = [];
 
   // 检查root 为 null
@@ -72,8 +49,16 @@ var levelOrder = function (root) {
       queue.enqueue(node.right);
     }
 
-    (ret[n] = ret[n] || []).push(node.val);
     count--;
+
+    ret[n] = ret[n] || [];
+    // 在 102 题的基础上，改变塞的方式
+    // 如果奇数则从尾部插入
+    if ((n & 1) === 1) {
+      ret[n][count] = node.val;
+    } else {
+      ret[n].push(node.val);
+    }
 
     // 根据当前层节点个数是否遍历完，以判断当前层结束
     if (count < 1) {

@@ -324,7 +324,7 @@ Leetcode 1335 Minimum Difficulty of a Job Schedule
 
 #### 遍历图（或者树），求最短路径长度
 
-- [] Leetcode 102 Binary Tree Level Order Traversal
+- [x] Leetcode 102 Binary Tree Level Order Traversal
 - [] Leetcode 103 Binary Tree Zigzag Level Order Traversal
 - [] Leetcode 297 Serialize and Deserialize Binary Tree （很好的 BFS 和双指针结合的题）
 - [] Leetcode 374 Binary Tree Vertical Order Traversal
