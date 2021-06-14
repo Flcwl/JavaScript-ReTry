@@ -4,7 +4,7 @@
 
 ---
 
-## Sort
+## 1. Sort
 
 ### Features
 
@@ -30,7 +30,7 @@
 
 ---
 
-## Linked List
+## 2. Linked List
 
 链表可以保证插入删除操作都是 O（1），查找任意元素位置 O（N）
 
@@ -57,7 +57,7 @@
 
 ---
 
-## Queue
+## 3. Queue
 
 ### Features
 
@@ -76,7 +76,7 @@
 
 ---
 
-## Stack
+## 4. Stack
 
 ### Features
 
@@ -97,7 +97,7 @@
 
 ---
 
-## HashMap/ HashSet
+## 5. HashMap/ HashSet
 
 ### Features
 
@@ -120,7 +120,7 @@
 
 ---
 
-## Heap／Priority Queue
+## 6. Heap／Priority Queue
 
 ### Features
 
@@ -146,7 +146,7 @@
 
 ---
 
-## Binary Search
+## 7. Binary Search
 
 ### Features
 
@@ -177,7 +177,7 @@
 
 ---
 
-## double Pointer（双指针）
+## 8. double Pointer（双指针）
 
 ### Features
 
@@ -211,7 +211,38 @@
 - [] Leetcode 3. Longest Substring Without Repeating Characters
 - [] Leetcode 76. Minimum Window Substring
 
-## BFS（宽度优先搜索）
+---
+
+## 9. DFS（深度优先搜索）
+
+### Features
+
+（1）图中（有向无向皆可）的符合某种特征（比如最长）的路径以及长度
+（2）排列组合
+（3）遍历一个图（或者树）
+（4）找出图或者树中符合题目要求的全部方案
+
+DFS 基本模板（需要记录路径，不需要返回值 and 不需要记录路径，但需要记录某些特征的返回值）
+除了遍历之外多数情况下时间复杂度是指数级别，一般是 O(方案数 × 找到每个方案的时间复杂度)
+递归题目都可以用非递归迭代的方法写，但一般实现起来非常麻烦
+基于树的 DFS：需要记住递归写前序中序后序遍历二叉树的模板
+
+### Problems
+
+- [] Leetcode 543 Diameter of Binary Tree
+- [] Leetcode 226 Invert Binary Tree
+- [] Leetcode 124 Binary Tree Maximum Path Sum
+- [] Leetcode 236 Lowest Common Ancestor of a Binary Tree
+- [] Leetcode 101 Symmetric Tree
+- [] Leetcode 105 Construct Binary Tree from Preorder and Inorder Traversal
+- [] Leetcode 104 Maximum Depth of Binary Tree
+- [] Leetcode 951 Flip Equivalent Binary Trees
+- [] Leetcode 987 Vertical Order Traversal of a Binary Tree
+- [] Leetcode 1485 Clone Binary Tree With Random Pointer
+- [] Leetcode 572 Subtree of Another Tree
+- [] Leetcode 863 All Nodes Distance K in Binary Tree
+
+## 10. BFS（宽度优先搜索）
 
 ### Features
 
@@ -245,36 +276,9 @@
 - [] Leetcode 444 Sequence Reconstruction
 - [] Leetcode 269 Alien Dictionary
 
-## DFS（深度优先搜索）
+---
 
-### Features
-
-（1）图中（有向无向皆可）的符合某种特征（比如最长）的路径以及长度
-（2）排列组合
-（3）遍历一个图（或者树）
-（4）找出图或者树中符合题目要求的全部方案
-
-DFS 基本模板（需要记录路径，不需要返回值 and 不需要记录路径，但需要记录某些特征的返回值）
-除了遍历之外多数情况下时间复杂度是指数级别，一般是 O(方案数 × 找到每个方案的时间复杂度)
-递归题目都可以用非递归迭代的方法写，但一般实现起来非常麻烦
-基于树的 DFS：需要记住递归写前序中序后序遍历二叉树的模板
-
-### Problems
-
-- [] Leetcode 543 Diameter of Binary Tree
-- [] Leetcode 226 Invert Binary Tree
-- [] Leetcode 124 Binary Tree Maximum Path Sum
-- [] Leetcode 236 Lowest Common Ancestor of a Binary Tree
-- [] Leetcode 101 Symmetric Tree
-- [] Leetcode 105 Construct Binary Tree from Preorder and Inorder Traversal
-- [] Leetcode 104 Maximum Depth of Binary Tree
-- [] Leetcode 951 Flip Equivalent Binary Trees
-- [] Leetcode 987 Vertical Order Traversal of a Binary Tree
-- [] Leetcode 1485 Clone Binary Tree With Random Pointer
-- [] Leetcode 572 Subtree of Another Tree
-- [] Leetcode 863 All Nodes Distance K in Binary Tree
-
-## BST（二叉搜索树）
+## 11. BST（二叉搜索树）
 
 BST 特征：中序遍历为单调递增的二叉树，换句话说，根节点的值比左子树任意节点值都大，比右子树任意节点值都小，增删查改均为 O（h）复杂度，h 为数的高度；注意不是所有的 BST 题目都需要递归，有的题目只需要 while 循环即可
 Leetcode 230 Kth Smallest element in a BST
@@ -318,37 +322,7 @@ Leetcode 72 Edit Distance
 Leetcode 377 Combination Sum IV
 Leetcode 1335 Minimum Difficulty of a Job Schedule
 
-## Prefix Sum（前缀和）
-
-### Features
-
-- 提前用 O（N）的时间提前算好从第 0 个数字到第 i 个数字之和
-- 之后在使用中可以在 O（1）时间内计算出第 i 到第 j 个数字之和
-
-### Problems
-
-- [x] Leetcode 53 Maximum Subarray
-- [] Leetcode 1423 Maximum Points You Can Obtain from Cards
-- [] Leetcode 1031 Maximum Sum of Two Non-Overlapping Subarrays
-- [] Leetcode 523 Continuous Subarray Sum
-
-## Union Find（并查集）
-
-把两个或者多个集合合并为一个集合，包含合并与查找两个操作
-
-### Features
-
-- 如果数据不是实时变化，本类问题可以用 BFS 或者 DFS 的方式遍历
-- 如果数据实时变化（data stream）则并查集每次的时间复杂度可以视为 O（1）
-
-### Problems
-
-- [x] Leetcode 721 Accounts Merge
-- [] Leetcode 547 Number of Provinces
-- [] Leetcode 737 Sentence Similarity II
-- [] Leetcode 434 Number of Islands II
-
-## Trie（字典树）
+## 12. Trie（字典树）
 
 - https://zh.wikipedia.org/wiki/Trie
 
@@ -364,7 +338,46 @@ Leetcode 1335 Minimum Difficulty of a Job Schedule
 - [] Leetcode 1268 Search Suggestions System
 - [] Leetcode 79 Word Search
 
-## Monotone Stack／Queue（单调栈与单调队列）
+## 13. TreeMap
+
+基础知识：基于红黑树（平衡二叉搜索树）的一种树状 hashmap，增删查改、找求大最小均为 logN 复杂度，Python 当中可以使用 SortedDict 替代
+常见题目：
+Leetcode 729 My Calendar I
+Leetcode 981 Time Based Key-Value Store
+Leetcode 846 Hand of Straights
+Leetcode 826 Most Profit Assigning Work
+
+## 14. Prefix Sum（前缀和）
+
+### Features
+
+- 提前用 O（N）的时间提前算好从第 0 个数字到第 i 个数字之和
+- 之后在使用中可以在 O（1）时间内计算出第 i 到第 j 个数字之和
+
+### Problems
+
+- [x] Leetcode 53 Maximum Subarray
+- [] Leetcode 1423 Maximum Points You Can Obtain from Cards
+- [] Leetcode 1031 Maximum Sum of Two Non-Overlapping Subarrays
+- [] Leetcode 523 Continuous Subarray Sum
+
+## 15. Union Find（并查集）
+
+把两个或者多个集合合并为一个集合，包含合并与查找两个操作
+
+### Features
+
+- 如果数据不是实时变化，本类问题可以用 BFS 或者 DFS 的方式遍历
+- 如果数据实时变化（data stream）则并查集每次的时间复杂度可以视为 O（1）
+
+### Problems
+
+- [x] Leetcode 721 Accounts Merge
+- [] Leetcode 547 Number of Provinces
+- [] Leetcode 737 Sentence Similarity II
+- [] Leetcode 434 Number of Islands II
+
+## 16.Monotone Stack／Queue（单调栈与单调队列）
 
 基础知识：单调栈一般用于解决数组中找出每个数字的第一个大于／小于该数字的位置或者数字；单调队列只见过一道题需要使用；不论单调栈还是单调队列，单调的意思是保留在栈或者队列中的数字是单调递增或者单调递减的
 常见题目：
@@ -375,7 +388,7 @@ Leetcode 901 Online Stock Span
 Leetcode 503 Next Greater Element II
 Leetcode 239 Sliding Window Maximum （唯一的单调队列题）
 
-## Sweep Line（扫描线算法）
+## 17. Sweep Line（扫描线算法）
 
 ### Features
 
@@ -388,16 +401,7 @@ Leetcode 239 Sliding Window Maximum （唯一的单调队列题）
 - [x] Leetcode 218 The Skyline Problem
 - [] Leetcode 759 Employee Free Time
 
-## TreeMap
-
-基础知识：基于红黑树（平衡二叉搜索树）的一种树状 hashmap，增删查改、找求大最小均为 logN 复杂度，Python 当中可以使用 SortedDict 替代
-常见题目：
-Leetcode 729 My Calendar I
-Leetcode 981 Time Based Key-Value Store
-Leetcode 846 Hand of Straights
-Leetcode 826 Most Profit Assigning Work
-
-## Dynamic Programming（动态规划）
+## 18. Dynamic Programming（动态规划）
 
 基础知识：这里指的是用 for 循环方式的动态规划，非 Memoization Search 方式。DP 可以在多项式时间复杂度内解决 DFS 需要指数级别的问题。常见的题目包括找最大最小，找可行性，找总方案数等，一般结果是一个 Integer 或者 Boolean。动态规划有很多分支，暂时还没想好怎么去写这部分，后面想好了再具体写吧。
 常见题目：
