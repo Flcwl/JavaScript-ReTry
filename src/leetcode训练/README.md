@@ -160,6 +160,7 @@
 
 - [x] Leetcode 34. Find First and Last Position of Element in - Sorted [] Array
 - [] Leetcode 33. Search in Rotated Sorted Array
+- [x] Leetcode 374 Guess Number Higher or Lower
 - [] Leetcode 1095. Find in Mountain Array
 - [] Leetcode 162. Find Peak Element
 - [] Leetcode 278. First Bad Version
@@ -325,9 +326,9 @@ Leetcode 1335 Minimum Difficulty of a Job Schedule
 #### 遍历图（或者树），求最短路径长度
 
 - [x] Leetcode 102 Binary Tree Level Order Traversal
-- [] Leetcode 103 Binary Tree Zigzag Level Order Traversal
-- [] Leetcode 297 Serialize and Deserialize Binary Tree （很好的 BFS 和双指针结合的题）
+- [x] Leetcode 103 Binary Tree Zigzag Level Order Traversal
 - [] Leetcode 374 Binary Tree Vertical Order Traversal
+- [] Leetcode 297 Serialize and Deserialize Binary Tree （很好的 BFS 和双指针结合的题）
 - [] Leetcode 200. Number of Islands
 - [] Leetcode 133. Clone Graph
 - [] Leetcode 127. Word Ladder
