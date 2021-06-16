@@ -327,8 +327,8 @@ Leetcode 1335 Minimum Difficulty of a Job Schedule
 
 - [x] Leetcode 102 Binary Tree Level Order Traversal
 - [x] Leetcode 103 Binary Tree Zigzag Level Order Traversal
-- [] Leetcode 374 Binary Tree Vertical Order Traversal
-- [] Leetcode 297 Serialize and Deserialize Binary Tree （很好的 BFS 和双指针结合的题）
+- [x] Leetcode 374 Binary Tree Vertical Order Traversal
+- [x] Leetcode 297 Serialize and Deserialize Binary Tree （很好的 BFS 和双指针结合的题）
 - [] Leetcode 200. Number of Islands
 - [] Leetcode 133. Clone Graph
 - [] Leetcode 127. Word Ladder
