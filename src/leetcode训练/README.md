@@ -71,7 +71,7 @@
 - [] Leetcode 346. Moving Average from Data Stream（Paid）
 - [] Leetcode 281. Zigzag Iterator（Paid）
 - [] Leetcode 1429. First Unique Number（Paid）
-- [] Leetcode 362. Design Hit Counter
+- [] Leetcode 362. Design Hit Counter（Paid）
 
 ---
 
@@ -89,8 +89,8 @@
 - [x] Leetcode 150. Evaluate Reverse Polish Notation
 - [x] Leetcode 224. Basic Calculator II (I, II, III, IV)
 - [x] Leetcode 20. Valid Parentheses
-- [] Leetcode 1472. Design Browser History
-- [] Leetcode 1209. Remove All Adjacent Duplicates in String II
+- [x] Leetcode 1472. Design Browser History
+- [x] Leetcode 1209. Remove All Adjacent Duplicates in String II
 - [] Leetcode 1249. Minimum Remove to Make Valid Parentheses
 - [] Leetcode 735. Asteroid Collision
 
