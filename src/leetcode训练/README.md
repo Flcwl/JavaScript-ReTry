@@ -91,8 +91,8 @@
 - [x] Leetcode 20. Valid Parentheses
 - [x] Leetcode 1472. Design Browser History
 - [x] Leetcode 1209. Remove All Adjacent Duplicates in String II
-- [] Leetcode 1249. Minimum Remove to Make Valid Parentheses
-- [] Leetcode 735. Asteroid Collision
+- [x] Leetcode 1249. Minimum Remove to Make Valid Parentheses
+- [x] Leetcode 735. Asteroid Collision
 
 ---
 
