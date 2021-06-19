@@ -68,10 +68,9 @@
 ### Problems
 
 - [x] Leetcode 225. Implement Stack using Queues
-- [] Leetcode 346. Moving Average from Data Stream
-- [] Leetcode 281. Zigzag Iterator
-- [] Leetcode 1429. First Unique Number
-- [] Leetcode 54. Spiral Matrix
+- [] Leetcode 346. Moving Average from Data Stream（Paid）
+- [] Leetcode 281. Zigzag Iterator（Paid）
+- [] Leetcode 1429. First Unique Number（Paid）
 - [] Leetcode 362. Design Hit Counter
 
 ---
@@ -89,7 +88,7 @@
 - [x] Leetcode 232. Implement Queue using Stacks
 - [x] Leetcode 150. Evaluate Reverse Polish Notation
 - [x] Leetcode 224. Basic Calculator II (I, II, III, IV)
-- [] Leetcode 20. Valid Parentheses
+- [x] Leetcode 20. Valid Parentheses
 - [] Leetcode 1472. Design Browser History
 - [] Leetcode 1209. Remove All Adjacent Duplicates in String II
 - [] Leetcode 1249. Minimum Remove to Make Valid Parentheses
@@ -438,7 +437,18 @@ Leetcode 1335 Minimum Difficulty of a Job Schedule
 - [x] Leetcode 218 The Skyline Problem
 - [] Leetcode 759 Employee Free Time
 
-## 18. Dynamic Programming（动态规划）
+## 17. RoadMap
+
+### Features
+
+- 图遍历
+- 四个方向边探边走
+
+### Problems
+
+- [x] Leetcode 54. Spiral Matrix
+
+## 19. Dynamic Programming（动态规划）
 
 基础知识：这里指的是用 for 循环方式的动态规划，非 Memoization Search 方式。DP 可以在多项式时间复杂度内解决 DFS 需要指数级别的问题。常见的题目包括找最大最小，找可行性，找总方案数等，一般结果是一个 Integer 或者 Boolean。动态规划有很多分支，暂时还没想好怎么去写这部分，后面想好了再具体写吧。
 常见题目：

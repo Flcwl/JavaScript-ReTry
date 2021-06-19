@@ -102,3 +102,27 @@ Heap.prototype.swap = function (p1, p2) {
   this.list[p1] = this.list[p2];
   this.list[p2] = t;
 };
+
+Heap.prototype.peek = function () {
+  const head = this.list[0];
+  return head;
+};
+
+Heap.prototype.findIndex = function (cb) {
+  return this.list.findIndex(cb);
+};
+
+Heap.prototype.remove = function (pos) {
+  if (pos < 0 || pos > this.list.length - 1) return;
+
+  if (pos === this.list.length - 1) {
+    return this.list.pop();
+  }
+
+  const node = this.list[pos];
+
+  this.list[pos] = this.list.pop();
+  this._bubbleDown(pos);
+
+  return node;
+};
