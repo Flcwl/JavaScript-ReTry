@@ -112,7 +112,7 @@
 - [x] Leetcode 128. Longest Consecutive Sequence
 - [x] Leetcode 73. Set Matrix Zeroes
 - [x] Leetcode 380. Insert Delete GetRandom O(1)
-- [] Leetcode 49. Group Anagrams
+- [x] Leetcode 49. Group Anagrams
 - [] Leetcode 350. Intersection of Two Arrays II
 - [] Leetcode 299. Bulls and Cows
 - [] Leetcode 348 Design Tic-Tac-Toe
