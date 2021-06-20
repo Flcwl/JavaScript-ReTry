@@ -111,7 +111,7 @@
 - [x] Leetcode 146. LRU Cache
 - [x] Leetcode 128. Longest Consecutive Sequence
 - [x] Leetcode 73. Set Matrix Zeroes
-- [] Leetcode 380. Insert Delete GetRandom O(1)
+- [x] Leetcode 380. Insert Delete GetRandom O(1)
 - [] Leetcode 49. Group Anagrams
 - [] Leetcode 350. Intersection of Two Arrays II
 - [] Leetcode 299. Bulls and Cows
@@ -450,34 +450,38 @@ Leetcode 1335 Minimum Difficulty of a Job Schedule
 
 ## 19. Dynamic Programming（动态规划）
 
-基础知识：这里指的是用 for 循环方式的动态规划，非 Memoization Search 方式。DP 可以在多项式时间复杂度内解决 DFS 需要指数级别的问题。常见的题目包括找最大最小，找可行性，找总方案数等，一般结果是一个 Integer 或者 Boolean。动态规划有很多分支，暂时还没想好怎么去写这部分，后面想好了再具体写吧。
-常见题目：
-Leetcode 674 Longest Continuous Increasing Subsequence
-Leetcode 62 Unique Paths II
-Leetcode 70 Climbing Stairs
-Leetcode 64 Minimum Path Sum
-Leetcode 368 Largest Divisible Subset
-Leetcode 300 Longest Increasing Subsequence
-Leetcode 354 Russian Doll Envelopes
-Leetcode 256 Paint House
-Leetcode 121 Best Time to Buy and Sell Stock
-Leetcode 55 Jump Game
-Leetcode 45 Jump Game II
-Leetcode 403 Frog Jump
-Leetcode 132 Palindrome Partitioning II
-Leetcode 312 Burst Balloons
-Leetcode 1143 Longest Common Subsequence
-Leetcode 115 Distinct Subsequences
-Leetcode 72 Edit Distance
-Leetcode 91 Decode Ways
-Leetcode 639 Decode Ways II
-Leetcode 712 Minimum ASCII Delete Sum for Two Strings
-Leetcode 221 Maximal Square
-Leetcode 198 House Robber
-Leetcode 213 House Robber II
-Leetcode 87 Scramble String
-Leetcode 1062 Longest Repeating Substring
-Leetcode 1140 Stone Game II
-Leetcode 322 Coin Change
-Leetcode 518 Coin Change II
-Leetcode 97 Interleaving String
+- for 循环方式的动态规划，非 Memoization Search 方式
+- DP 可以在多项式时间复杂度内解决 DFS 需要指数级别的问题
+- 常见的题目包括找最大最小，找可行性，找总方案数等，一般结果是一个 Integer 或者 Boolean。
+
+### Problems
+
+- [] Leetcode 674 Longest Continuous Increasing Subsequence
+- [] Leetcode 62 Unique Paths II
+- [] Leetcode 70 Climbing Stairs
+- [] Leetcode 64 Minimum Path Sum
+- [] Leetcode 368 Largest Divisible Subset
+- [] Leetcode 300 Longest Increasing Subsequence
+- [] Leetcode 354 Russian Doll Envelopes
+- [] Leetcode 256 Paint House
+- [] Leetcode 121 Best Time to Buy and Sell Stock
+- [] Leetcode 55 Jump Game
+- [] Leetcode 45 Jump Game II
+- [] Leetcode 403 Frog Jump
+- [] Leetcode 132 Palindrome Partitioning II
+- [] Leetcode 312 Burst Balloons
+- [] Leetcode 1143 Longest Common Subsequence
+- [] Leetcode 115 Distinct Subsequences
+- [] Leetcode 72 Edit Distance
+- [] Leetcode 91 Decode Ways
+- [] Leetcode 639 Decode Ways II
+- [] Leetcode 712 Minimum ASCII Delete Sum for Two Strings
+- [] Leetcode 221 Maximal Square
+- [] Leetcode 198 House Robber
+- [] Leetcode 213 House Robber II
+- [] Leetcode 87 Scramble String
+- [] Leetcode 1062 Longest Repeating Substring
+- [] Leetcode 1140 Stone Game II
+- [] Leetcode 322 Coin Change
+- [] Leetcode 518 Coin Change II
+- [] Leetcode 97 Interleaving String
