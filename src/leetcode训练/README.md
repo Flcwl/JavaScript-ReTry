@@ -136,7 +136,7 @@
 - [] Leetcode 1086. High Five
 - [x] Leetcode 68. Merge Sorted Arrays
 - [x] Leetcode 692. Top K Frequent Words
-- [] Leetcode 378. Kth Smallest Element in a Sorted Matrix
+- [x] Leetcode 378. Kth Smallest Element in a Sorted Matrix
 - [] Leetcode 295. Find Median from Data Stream
 - [] Leetcode 767. Reorganize String
 - [] Leetcode 1438. Longest Continuous Subarray With Absolute Diff
