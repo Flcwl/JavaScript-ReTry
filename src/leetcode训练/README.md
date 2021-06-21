@@ -131,11 +131,11 @@
 
 - [x] Leetcode 973. K Closest Points
 - [x] Leetcode 347. Top k Largest Elements
-- [] Leetcode 23. Merge K Sorted Lists
+- [x] Leetcode 23. Merge K Sorted Lists
 - [] Leetcode 264. Ugly Number II
 - [] Leetcode 1086. High Five
-- [] Leetcode 68. Merge Sorted Arrays
-- [] Leetcode 692. Top K Frequent Words
+- [x] Leetcode 68. Merge Sorted Arrays
+- [x] Leetcode 692. Top K Frequent Words
 - [] Leetcode 378. Kth Smallest Element in a Sorted Matrix
 - [] Leetcode 295. Find Median from Data Stream
 - [] Leetcode 767. Reorganize String
