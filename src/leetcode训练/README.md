@@ -133,11 +133,10 @@
 - [x] Leetcode 347. Top k Largest Elements
 - [x] Leetcode 23. Merge K Sorted Lists
 - [] Leetcode 264. Ugly Number II
-- [] Leetcode 1086. High Five
+- [] Leetcode 1086. High Five264
 - [x] Leetcode 68. Merge Sorted Arrays
 - [x] Leetcode 692. Top K Frequent Words
 - [x] Leetcode 378. Kth Smallest Element in a Sorted Matrix
-- [] Leetcode 295. Find Median from Data Stream
 - [] Leetcode 767. Reorganize String
 - [] Leetcode 1438. Longest Continuous Subarray With Absolute Diff
 - [] Less Than or Equal to Limit
@@ -160,6 +159,7 @@
 - [x] Leetcode 34. Find First and Last Position of Element in - Sorted [] Array
 - [] Leetcode 33. Search in Rotated Sorted Array
 - [x] Leetcode 374 Guess Number Higher or Lower
+- [x] Leetcode 295. Find Median from Data Stream
 - [] Leetcode 1095. Find in Mountain Array
 - [] Leetcode 162. Find Peak Element
 - [] Leetcode 278. First Bad Version
