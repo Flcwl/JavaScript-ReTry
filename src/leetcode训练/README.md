@@ -137,7 +137,7 @@
 - [x] Leetcode 68. Merge Sorted Arrays
 - [x] Leetcode 692. Top K Frequent Words
 - [x] Leetcode 378. Kth Smallest Element in a Sorted Matrix
-- [] Leetcode 767. Reorganize String
+- [x] Leetcode 767. Reorganize String
 - [] Leetcode 1438. Longest Continuous Subarray With Absolute Diff
 - [] Less Than or Equal to Limit
 - [] Leetcode 895. Maximum Frequency Stack
