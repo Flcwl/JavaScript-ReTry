@@ -162,12 +162,12 @@
 - [x] Leetcode 162. Find Peak Element
 - [x] Leetcode 278. First Bad Version
 - [x] Leetcode 74. Search a 2D Matrix
-- [x] Leetcode 240. Search a 2D Matrix II
 
 #### 隐式二分法
 
 - [x] Leetcode 69. Sqrt(x)
-- [] Leetcode 540. Single Element in a Sorted Array
+- [x] Leetcode 240. Search a 2D Matrix II
+- [x] Leetcode 540. Single Element in a Sorted Array
 - [] Leetcode 644. Maximum Average Subarray II
 - [] Leetcode 528. Random Pick with Weight
 - [] Leetcode 1300. Sum of Mutated Array Closest to Target
