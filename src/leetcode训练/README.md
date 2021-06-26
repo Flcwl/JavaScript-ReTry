@@ -138,8 +138,6 @@
 - [x] Leetcode 692. Top K Frequent Words
 - [x] Leetcode 378. Kth Smallest Element in a Sorted Matrix
 - [x] Leetcode 767. Reorganize String
-- [] Leetcode 1438. Longest Continuous Subarray With Absolute Diff
-- [] Less Than or Equal to Limit
 - [] Leetcode 895. Maximum Frequency Stack
 
 ---
@@ -210,6 +208,7 @@
 - [] Leetcode 340. Longest Substring with At Most K Distinct Characters
 - [] Leetcode 3. Longest Substring Without Repeating Characters
 - [] Leetcode 76. Minimum Window Substring
+- [x] Leetcode 1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit
 
 ---
 
