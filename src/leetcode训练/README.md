@@ -158,8 +158,8 @@
 - [x] Leetcode 33. Search in Rotated Sorted Array
 - [x] Leetcode 374 Guess Number Higher or Lower
 - [x] Leetcode 295. Find Median from Data Stream
-- [] Leetcode 1095. Find in Mountain Array
-- [] Leetcode 162. Find Peak Element
+- [x] Leetcode 1095. Find in Mountain Array
+- [x] Leetcode 162. Find Peak Element
 - [] Leetcode 278. First Bad Version
 - [] Leetcode 74. Search a 2D Matrix
 - [] Leetcode 240. Search a 2D Matrix II
