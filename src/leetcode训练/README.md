@@ -161,8 +161,8 @@
 - [x] Leetcode 1095. Find in Mountain Array
 - [x] Leetcode 162. Find Peak Element
 - [x] Leetcode 278. First Bad Version
-- [] Leetcode 74. Search a 2D Matrix
-- [] Leetcode 240. Search a 2D Matrix II
+- [x] Leetcode 74. Search a 2D Matrix
+- [x] Leetcode 240. Search a 2D Matrix II
 
 #### 隐式二分法
 
