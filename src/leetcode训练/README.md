@@ -160,7 +160,7 @@
 - [x] Leetcode 295. Find Median from Data Stream
 - [x] Leetcode 1095. Find in Mountain Array
 - [x] Leetcode 162. Find Peak Element
-- [] Leetcode 278. First Bad Version
+- [x] Leetcode 278. First Bad Version
 - [] Leetcode 74. Search a 2D Matrix
 - [] Leetcode 240. Search a 2D Matrix II
 
