@@ -168,8 +168,8 @@
 - [x] Leetcode 69. Sqrt(x)
 - [x] Leetcode 240. Search a 2D Matrix II
 - [x] Leetcode 540. Single Element in a Sorted Array
-- [] Leetcode 644. Maximum Average Subarray II
-- [] Leetcode 528. Random Pick with Weight
+- [] Leetcode 644. Maximum Average Subarray II（Paid）
+- [x] Leetcode 528. Random Pick with Weight
 - [] Leetcode 1300. Sum of Mutated Array Closest to Target
 - [] Leetcode 1060. Missing Element in Sorted Array
 
@@ -264,9 +264,11 @@ DFS 基本模板（需要记录路径，不需要返回值 and 不需要记录�
 
 - 和 BFS 一样一般需要一个 set 来记录访问过的节点
 - 避免重复访问造成死循环
+- 四个方向边探边走
 
 ### Problems
 
+- [x] Leetcode 54. Spiral Matrix
 - [x] Leetcode 200. Number of Islands
 - [] Leetcode 341 Flatten Nested List Iterator
 - [] Leetcode 394 Decode String
@@ -436,22 +438,11 @@ Leetcode 1335 Minimum Difficulty of a Job Schedule
 - [x] Leetcode 218 The Skyline Problem
 - [] Leetcode 759 Employee Free Time
 
-## 17. RoadMap
-
-### Features
-
-- 图遍历
-- 四个方向边探边走
-
-### Problems
-
-- [x] Leetcode 54. Spiral Matrix
-
-## 19. Dynamic Programming（动态规划）
+## 18. Dynamic Programming（动态规划）
 
 - for 循环方式的动态规划，非 Memoization Search 方式
 - DP 可以在多项式时间复杂度内解决 DFS 需要指数级别的问题
-- 常见的题目包括找最大最小，找可行性，找总方案数等，一般结果是一个 Integer 或者 Boolean。
+- 常见的题目包括找最大最小，找可行性，找总方案数等，一般结果是一个 Integer 或者 Boolean
 
 ### Problems
 
