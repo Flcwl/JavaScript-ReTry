@@ -170,8 +170,8 @@
 - [x] Leetcode 540. Single Element in a Sorted Array
 - [] Leetcode 644. Maximum Average Subarray II（Paid）
 - [x] Leetcode 528. Random Pick with Weight
-- [] Leetcode 1300. Sum of Mutated Array Closest to Target
-- [] Leetcode 1060. Missing Element in Sorted Array
+- [x] Leetcode 1300. Sum of Mutated Array Closest to Target
+- [] Leetcode 1060. Missing Element in Sorted Array(Paid)
 
 ---
 
@@ -221,10 +221,10 @@
 （3）遍历一个图（或者树）
 （4）找出图或者树中符合题目要求的全部方案
 
-DFS 基本模板（需要记录路径，不需要返回值 and 不需要记录路径，但需要记录某些特征的返回值）
-除了遍历之外多数情况下时间复杂度是指数级别，一般是 O(方案数 × 找到每个方案的时间复杂度)
-递归题目都可以用非递归迭代的方法写，但一般实现起来非常麻烦
-基于树的 DFS：需要记住递归写前序中序后序遍历二叉树的模板
+- DFS 基本模板（需要记录路径，不需要返回值 and 不需要记录路径，但需要记录某些特征的返回值）
+- 除了遍历之外多数情况下时间复杂度是指数级别，一般是 O(方案数 × 找到每个方案的时间复杂度)
+- 递归题目都可以用非递归迭代的方法写，但一般实现起来非常麻烦
+- 基于树的 DFS：需要记住递归写前序中序后序遍历二叉树的模板
 
 ### Problems
 

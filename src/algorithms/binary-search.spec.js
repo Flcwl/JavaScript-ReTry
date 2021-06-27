@@ -45,6 +45,15 @@ describe("binarySearch", () => {
       assert.strictEqual(actual, expect);
     });
 
+    it("not found in middle", () => {
+      const arr = [1, 2, 3, 5, 6, 7, 8];
+      // Not -4
+      const expect = -5;
+      const actual = binarySearch(arr, 5.5);
+
+      assert.strictEqual(actual, expect);
+    });
+
     it("outright", () => {
       const arr = [1, 2, 3, 5, 6, 7, 8];
       const expect = -7;
