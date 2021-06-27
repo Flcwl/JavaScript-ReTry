@@ -228,8 +228,8 @@
 
 ### Problems
 
-- [] Leetcode 543 Diameter of Binary Tree
-- [] Leetcode 226 Invert Binary Tree
+- [x] Leetcode 543 Diameter of Binary Tree
+- [x] Leetcode 226 Invert Binary Tree
 - [] Leetcode 124 Binary Tree Maximum Path Sum
 - [] Leetcode 236 Lowest Common Ancestor of a Binary Tree
 - [] Leetcode 101 Symmetric Tree
