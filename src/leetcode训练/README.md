@@ -230,7 +230,7 @@
 
 - [x] Leetcode 543 Diameter of Binary Tree
 - [x] Leetcode 226 Invert Binary Tree
-- [] Leetcode 124 Binary Tree Maximum Path Sum
+- [x] Leetcode 124 Binary Tree Maximum Path Sum
 - [] Leetcode 236 Lowest Common Ancestor of a Binary Tree
 - [] Leetcode 101 Symmetric Tree
 - [] Leetcode 105 Construct Binary Tree from Preorder and Inorder Traversal
@@ -446,17 +446,23 @@ Leetcode 1335 Minimum Difficulty of a Job Schedule
 
 ### Problems
 
-- [] Leetcode 674 Longest Continuous Increasing Subsequence
-- [] Leetcode 62 Unique Paths II
-- [] Leetcode 70 Climbing Stairs
-- [] Leetcode 64 Minimum Path Sum
+- [x] Leetcode 674 Longest Continuous Increasing Subsequence
+- [x] Leetcode 70 Climbing Stairs
+- [x] Leetcode 62 Unique Paths II
+- [x] Leetcode 64 Minimum Path Sum
 - [] Leetcode 368 Largest Divisible Subset
-- [] Leetcode 300 Longest Increasing Subsequence
+- [x] Leetcode 300 Longest Increasing Subsequence
 - [] Leetcode 354 Russian Doll Envelopes
-- [] Leetcode 256 Paint House
-- [] Leetcode 121 Best Time to Buy and Sell Stock
-- [] Leetcode 55 Jump Game
-- [] Leetcode 45 Jump Game II
+- [] Leetcode 256 Paint House（Paid）
+
+#### 前缀极小值
+
+- [x] Leetcode 121 Best Time to Buy and Sell Stock
+
+#### 贪心
+
+- [x] Leetcode 55 Jump Game
+- [x] Leetcode 45 Jump Game II
 - [] Leetcode 403 Frog Jump
 - [] Leetcode 132 Palindrome Partitioning II
 - [] Leetcode 312 Burst Balloons
@@ -467,11 +473,17 @@ Leetcode 1335 Minimum Difficulty of a Job Schedule
 - [] Leetcode 639 Decode Ways II
 - [] Leetcode 712 Minimum ASCII Delete Sum for Two Strings
 - [] Leetcode 221 Maximal Square
-- [] Leetcode 198 House Robber
-- [] Leetcode 213 House Robber II
+
+#### 递推公式 \* 8
+
+- [x] Leetcode 198 House Robber
+- [x] Leetcode 213 House Robber II
 - [] Leetcode 87 Scramble String
 - [] Leetcode 1062 Longest Repeating Substring
 - [] Leetcode 1140 Stone Game II
-- [] Leetcode 322 Coin Change
-- [] Leetcode 518 Coin Change II
-- [] Leetcode 97 Interleaving String
+- [x] Leetcode 322 Coin Change
+- [x] Leetcode 518 Coin Change II
+- [x] Leetcode 97 Interleaving String
+
+<!-- https://zhuanlan.zhihu.com/p/349940945 -->
+<!-- https://www.bilibili.com/read/cv9904414?spm_id_from=333.999.0.0 -->
