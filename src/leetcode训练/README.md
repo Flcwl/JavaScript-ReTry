@@ -16,17 +16,17 @@
 
 ### Problems
 
-#### 入门
+#### 归并
 
-- [] Leetcode 148. Sort List
+- [x] Leetcode 148. Sort List
 - [x] Leetcode 56. Merge Intervals
 - [x] Leetcode 179. Largest Number
 - [x] Leetcode 75. Sort Colors
 
-#### 进阶（快速选择 Quick Select 算法）
+#### 快排
 
-- [] Leetcode 215. Kth Largest Element
 - [] Leetcode 4. Median of Two Sorted Arrays
+- [x] Leetcode 215. Kth Largest Element
 
 ---
 
@@ -43,17 +43,24 @@
 
 ### Problems
 
-#### 入门
+#### 入门（思维）
+
+- [x] Leetcode 160. Intersection of Two Linked Lists（链表长度差值）
+
+#### 快慢指针
+
+- [x] Leetcode 876. Middle of the Linked List
+- [x] Leetcode 141. Linked List Cycle
+- [x] Leetcode 142. Linked List Cycle II
+
+#### 头插法（反转链表）
 
 - [x] Leetcode 206. Reverse Linked List
-- [x] Leetcode 876. Middle of the Linked List
+- [x] Leetcode 92. Reverse Linked List II
 
-#### 进阶
+#### 虚拟 root 节点
 
-- [] Leetcode 160. Intersection of Two Linked Lists
-- [] Leetcode 141. Linked List Cycle (Linked List Cycle II)
-- [] Leetcode 92. Reverse Linked List II
-- [] Leetcode 328. Odd Even Linked List
+- [x] Leetcode 328. Odd Even Linked List
 
 ---
 
