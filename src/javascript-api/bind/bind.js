@@ -4,7 +4,7 @@ module.exports = function () {
  */
   Function.prototype.call2 = function () {
     let _this = this; // 指向调用call的函数
-    let [context, ...args] = [...arguments]; // 参数列表
+    let [context = window, ...args] = [...arguments]; // 参数列表
 
     context.fn = _this;
     let ret = context.fn(...args);
@@ -29,7 +29,7 @@ module.exports = function () {
       return _this.call2( // call 参数列表
         context,
         ...args,
-        ...arguments
+        ...arguments // 返回函数的新的 arguments
       );
     };
   }
