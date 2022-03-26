@@ -4,6 +4,12 @@
 
 ---
 
+## 0. Basic
+
+#### 综合题
+
+- [x] Leetcode 987 Vertical Order Traversal of a Binary Tree
+
 ## 1. Sort
 
 ### Features
@@ -75,10 +81,10 @@
 ### Problems
 
 - [x] Leetcode 225. Implement Stack using Queues
-- [] Leetcode 346. Moving Average from Data Stream（Paid）
-- [] Leetcode 281. Zigzag Iterator（Paid）
-- [] Leetcode 1429. First Unique Number（Paid）
-- [] Leetcode 362. Design Hit Counter（Paid）
+- [-] Leetcode 346. Moving Average from Data Stream
+- [-] Leetcode 281. Zigzag Iterator
+- [-] Leetcode 1429. First Unique Number
+- [-] Leetcode 362. Design Hit Counter
 
 ---
 
@@ -122,7 +128,7 @@
 - [x] Leetcode 49. Group Anagrams
 - [x] Leetcode 350. Intersection of Two Arrays II
 - [x] Leetcode 299. Bulls and Cows
-- [] Leetcode 348. Design Tic-Tac-Toe（Paid）
+- [-] Leetcode 348. Design Tic-Tac-Toe
 
 ---
 
@@ -139,8 +145,7 @@
 - [x] Leetcode 973. K Closest Points
 - [x] Leetcode 347. Top k Largest Elements
 - [x] Leetcode 23. Merge K Sorted Lists
-- [] Leetcode 264. Ugly Number II（扩展）
-- [] Leetcode 1086. High Five264（Paid）
+- [-] Leetcode 1086. High Five
 - [x] Leetcode 68. Merge Sorted Arrays
 - [x] Leetcode 692. Top K Frequent Words
 - [x] Leetcode 378. Kth Smallest Element in a Sorted Matrix
@@ -161,7 +166,7 @@
 
 #### 显式二分法
 
-- [x] Leetcode 34. Find First and Last Position of Element in - Sorted [] Array
+- [x] Leetcode 34. Find First and Last Position of Element in Sorted Array
 - [x] Leetcode 33. Search in Rotated Sorted Array
 - [x] Leetcode 374 Guess Number Higher or Lower
 - [x] Leetcode 295. Find Median from Data Stream
@@ -175,10 +180,10 @@
 - [x] Leetcode 69. Sqrt(x)
 - [x] Leetcode 240. Search a 2D Matrix II
 - [x] Leetcode 540. Single Element in a Sorted Array
-- [] Leetcode 644. Maximum Average Subarray II（Paid）
+- [-] Leetcode 644. Maximum Average Subarray II
 - [x] Leetcode 528. Random Pick with Weight
 - [x] Leetcode 1300. Sum of Mutated Array Closest to Target
-- [] Leetcode 1060. Missing Element in Sorted Array(Paid)
+- [-] Leetcode 1060. Missing Element in Sorted Array
 
 ---
 
@@ -238,12 +243,11 @@
 - [x] Leetcode 543 Diameter of Binary Tree
 - [x] Leetcode 226 Invert Binary Tree
 - [x] Leetcode 124 Binary Tree Maximum Path Sum
-- [] Leetcode 236 Lowest Common Ancestor of a Binary Tree
-- [] Leetcode 101 Symmetric Tree
-- [] Leetcode 105 Construct Binary Tree from Preorder and Inorder Traversal
-- [] Leetcode 104 Maximum Depth of Binary Tree
-- [] Leetcode 951 Flip Equivalent Binary Trees
-- [] Leetcode 987 Vertical Order Traversal of a Binary Tree
+- [x] Leetcode 236 Lowest Common Ancestor of a Binary Tree
+- [x] Leetcode 101 Symmetric Tree
+- [x] Leetcode 105 Construct Binary Tree from Preorder and Inorder Traversal
+- [x] Leetcode 104 Maximum Depth of Binary Tree
+- [x] Leetcode 951 Flip Equivalent Binary Trees
 - [] Leetcode 1485 Clone Binary Tree With Random Pointer
 - [] Leetcode 572 Subtree of Another Tree
 - [] Leetcode 863 All Nodes Distance K in Binary Tree
@@ -460,7 +464,7 @@ Leetcode 1335 Minimum Difficulty of a Job Schedule
 - [] Leetcode 368 Largest Divisible Subset
 - [x] Leetcode 300 Longest Increasing Subsequence
 - [] Leetcode 354 Russian Doll Envelopes
-- [] Leetcode 256 Paint House（Paid）
+- [-] Leetcode 256 Paint House
 
 #### 前缀极小值
 
@@ -494,3 +498,7 @@ Leetcode 1335 Minimum Difficulty of a Job Schedule
 
 <!-- https://zhuanlan.zhihu.com/p/349940945 -->
 <!-- https://www.bilibili.com/read/cv9904414?spm_id_from=333.999.0.0 -->
+
+## 18. 数学
+
+- [x] Leetcode 264. Ugly Number II
