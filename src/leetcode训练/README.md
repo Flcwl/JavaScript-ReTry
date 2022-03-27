@@ -200,17 +200,16 @@
 #### 背向双指针：(基本上是回文串)
 
 - [x] Leetcode 125. Valid Palindrome
-- [] Leetcode 5. Longest Palindromic Substring
+- [x] Leetcode 5. Longest Palindromic Substring
 
 #### 相向双指针：(以 two sum 为基础的一系列题)
 
-- [] Leetcode 1. Two Sum (先排序的双指针算法)
-- [] Leetcode 167. Two Sum II - Input array is sorted
-- [] Leetcode 15. 3Sum
-- [] Leetcode 16. 3Sum Closest
-- [] Leetcode 18. 4Sum
-- [] Leetcode 454. 4Sum II
-- [] Leetcode 277. Find the Celebrity
+- [x] Leetcode 167. Two Sum II - Input array is sorted
+- [x] Leetcode 15. 3Sum
+- [x] Leetcode 16. 3Sum Closest
+- [x] Leetcode 18. 4Sum
+- [x] Leetcode 454. 4Sum II
+- [-] Leetcode 277. Find the Celebrity
 
 #### 同向双指针：（个人觉得最难的一类题）
 
@@ -248,9 +247,9 @@
 - [x] Leetcode 105 Construct Binary Tree from Preorder and Inorder Traversal
 - [x] Leetcode 104 Maximum Depth of Binary Tree
 - [x] Leetcode 951 Flip Equivalent Binary Trees
-- [] Leetcode 1485 Clone Binary Tree With Random Pointer
-- [] Leetcode 572 Subtree of Another Tree
-- [] Leetcode 863 All Nodes Distance K in Binary Tree
+- [-] Leetcode 1485 Clone Binary Tree With Random Pointer
+- [x] Leetcode 572 Subtree of Another Tree
+- [x] Leetcode 863 All Nodes Distance K in Binary Tree
 
 #### 二叉搜索树
 
@@ -263,13 +262,13 @@
 
 - [x] Leetcode 230 Kth Smallest element in a BST
 - [] Leetcode 98 Validate Binary Search Tree
-- [] Leetcode 270 Cloest Binary Search Tree Value
+- [-] Leetcode 270 Cloest Binary Search Tree Value
 - [] Leetcode 235 Lowest Common Ancestor of a Binary Search Tree
 - [] Leetcode 669 Trim a Binary Search Tree
 - [] Leetcode 700 Search Range in Binary Search Tree
 - [] Leetcode 108 Convert Sorted Array to Binary Search Tree
-- [] Leetcode 333 Largest BST Subtree
-- [] Leetcode 510 Inorder Successor in BST II
+- [-] Leetcode 333 Largest BST Subtree
+- [-] Leetcode 510 Inorder Successor in BST II
 
 #### 图搜索 DFS
 
@@ -305,12 +304,12 @@
 
 ### Problems
 
-Leetcode 17 Letter Combinations of a Phone Number
-Leetcode 39 Combination Sum （I, II, III, IV）
-Leetcode 90 Subsets II （重点在于如何去重）
-Leetcode 47 Permutation II
-Leetcode 77 Combinations
-Leetcode 526 Beautiful Arrangement
+- [] Leetcode 17 Letter Combinations of a Phone Number
+- [] Leetcode 39 Combination Sum （I, II, III, IV）
+- [] Leetcode 90 Subsets II （重点在于如何去重）
+- [] Leetcode 47 Permutation II
+- [] Leetcode 77 Combinations
+- [] Leetcode 526 Beautiful Arrangement
 
 #### 记忆化搜索（DFS + Memoization Search）
 
@@ -319,11 +318,11 @@ Leetcode 526 Beautiful Arrangement
 
 ### Problems
 
-Leetcode 139 Word Break II
-Leetcode 131 Palindrome Partitioning
-Leetcode 72 Edit Distance
-Leetcode 377 Combination Sum IV
-Leetcode 1335 Minimum Difficulty of a Job Schedule
+- [] Leetcode 139 Word Break II
+- [] Leetcode 131 Palindrome Partitioning
+- [] Leetcode 72 Edit Distance
+- [] Leetcode 377 Combination Sum IV
+- [] Leetcode 1335 Minimum Difficulty of a Job Schedule
 
 ## 10. BFS（宽度优先搜索）
 
