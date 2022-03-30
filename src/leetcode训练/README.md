@@ -242,7 +242,7 @@
 - [x] Leetcode 543 Diameter of Binary Tree
 - [x] Leetcode 226 Invert Binary Tree
 - [x] Leetcode 124 Binary Tree Maximum Path Sum
-- [x] Leetcode 236 Lowest Common Ancestor of a Binary Tree
+- [x] Leetcode 236 Lowest Common Ancestor of a Binary Tree（同 235）
 - [x] Leetcode 101 Symmetric Tree
 - [x] Leetcode 105 Construct Binary Tree from Preorder and Inorder Traversal
 - [x] Leetcode 104 Maximum Depth of Binary Tree
@@ -261,12 +261,11 @@
 ### Problems
 
 - [x] Leetcode 230 Kth Smallest element in a BST
-- [] Leetcode 98 Validate Binary Search Tree
+- [x] Leetcode 98 Validate Binary Search Tree
 - [-] Leetcode 270 Cloest Binary Search Tree Value
-- [] Leetcode 235 Lowest Common Ancestor of a Binary Search Tree
-- [] Leetcode 669 Trim a Binary Search Tree
-- [] Leetcode 700 Search Range in Binary Search Tree
-- [] Leetcode 108 Convert Sorted Array to Binary Search Tree
+- [x] Leetcode 669 Trim a Binary Search Tree
+- [x] Leetcode 700 Search Range in Binary Search Tree
+- [x] Leetcode 108 Convert Sorted Array to Binary Search Tree
 - [-] Leetcode 333 Largest BST Subtree
 - [-] Leetcode 510 Inorder Successor in BST II
 
@@ -280,7 +279,7 @@
 
 - [x] Leetcode 54. Spiral Matrix
 - [x] Leetcode 200. Number of Islands
-- [] Leetcode 341 Flatten Nested List Iterator
+- [x] Leetcode 341 Flatten Nested List Iterator
 - [] Leetcode 394 Decode String
 - [] Leetcode 51 N-Queens
 - [] Leetcode 291 Word Pattern II (I 为简单的 Hashmap 题)
@@ -399,9 +398,9 @@
 ### Problems
 
 - [x] Leetcode 53 Maximum Subarray
-- [] Leetcode 1423 Maximum Points You Can Obtain from Cards
-- [] Leetcode 1031 Maximum Sum of Two Non-Overlapping Subarrays
-- [] Leetcode 523 Continuous Subarray Sum
+- [x] Leetcode 1423 Maximum Points You Can Obtain from Cards
+- [x] Leetcode 1031 Maximum Sum of Two Non-Overlapping Subarrays
+- [x] Leetcode 523 Continuous Subarray Sum
 
 ## 15. Union Find（并查集）
 
