@@ -406,6 +406,10 @@
 
 把两个或者多个集合合并为一个集合，包含合并与查找两个操作
 
+### video
+
+https://www.bilibili.com/video/BV13t411v7Fs?spm_id_from=333.999.0.0
+
 ### Features
 
 - 如果数据不是实时变化，本类问题可以用 BFS 或者 DFS 的方式遍历
@@ -414,9 +418,10 @@
 ### Problems
 
 - [x] Leetcode 721 Accounts Merge
-- [] Leetcode 547 Number of Provinces
-- [] Leetcode 737 Sentence Similarity II
-- [] Leetcode 434 Number of Islands II
+- [x] Leetcode 547 Number of Provinces
+- [-] Leetcode 737 Sentence Similarity II
+- [x] Leetcode 990 Satisfiability of Equality Equations
+- [x] Leetcode 1319 Number of Islands II
 
 ## 16.Monotone Stack／Queue（单调栈与单调队列）
 
@@ -427,12 +432,12 @@
 
 ### Problems
 
-- [] Leetcode 84 Largest Rectangle in Histogram
-- [] Leetcode 85 Maximum Rectangle
-- [] Leetcode 739 Daily Temperatures
-- [] Leetcode 901 Online Stock Span
-- [] Leetcode 503 Next Greater Element II
-- [] Leetcode 239 Sliding Window Maximum （唯一的单调队列题）
+- [x] Leetcode 739 Daily Temperatures
+- [x] Leetcode 901 Online Stock Span
+- [x] Leetcode 84 Largest Rectangle in Histogram
+- [x] Leetcode 85 Maximum Rectangle
+- [x] Leetcode 503 Next Greater Element II
+- [x] Leetcode 239 Sliding Window Maximum （唯一的单调队列题）
 
 ## 17. Sweep Line（扫描线算法）
 
@@ -443,9 +448,9 @@
 
 ### Problems
 
-- [] Leetcode 253 Meeting Room II（Meeting Room I 也可以使用）
+- [-] Leetcode 253 Meeting Room II（Meeting Room I 也可以使用）
 - [x] Leetcode 218 The Skyline Problem
-- [] Leetcode 759 Employee Free Time
+- [-] Leetcode 759 Employee Free Time
 
 ## 18. Dynamic Programming（动态规划）
 
