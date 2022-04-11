@@ -211,14 +211,17 @@
 - [x] Leetcode 454. 4Sum II
 - [-] Leetcode 277. Find the Celebrity
 
-#### 同向双指针：（个人觉得最难的一类题）
+#### 同向双指针\滑动窗口：（字符串数组维持原顺序依次处理）
 
-- [] Leetcode 283. Move Zeroes
-- [] Leetcode 26. Remove Duplicate Numbers in Array
-- [] Leetcode 395. Longest Substring with At Least K Repeating Characters
-- [] Leetcode 340. Longest Substring with At Most K Distinct Characters
-- [] Leetcode 3. Longest Substring Without Repeating Characters
-- [] Leetcode 76. Minimum Window Substring
+- https://www.bilibili.com/video/BV1V54y1Q7bd
+- https://www.bilibili.com/video/BV113411v7Ak
+
+- [x] Leetcode 283. Move Zeroes
+- [x] Leetcode 26. Remove Duplicate Numbers in Array
+- [x] Leetcode 395. Longest Substring with At Least K Repeating Characters
+- [-] Leetcode 340. Longest Substring with At Most K Distinct Characters
+- [x] Leetcode 3. Longest Substring Without Repeating Characters
+- [x] Leetcode 76. Minimum Window Substring
 - [x] Leetcode 1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit
 
 ---
@@ -250,6 +253,7 @@
 - [-] Leetcode 1485 Clone Binary Tree With Random Pointer
 - [x] Leetcode 572 Subtree of Another Tree
 - [x] Leetcode 863 All Nodes Distance K in Binary Tree
+- [x] Leetcode 394 Decode String
 
 #### 二叉搜索树
 
@@ -280,11 +284,10 @@
 - [x] Leetcode 54. Spiral Matrix
 - [x] Leetcode 200. Number of Islands
 - [x] Leetcode 341 Flatten Nested List Iterator
-- [] Leetcode 394 Decode String
-- [] Leetcode 51 N-Queens
-- [] Leetcode 291 Word Pattern II (I 为简单的 Hashmap 题)
+- [x] Leetcode 51 N-Queens
+- [-] Leetcode 291 Word Pattern II (I 为简单的 Hashmap 题)
 - [] Leetcode 126 Word Ladder II （I 为 BFS 题目）
-- [] Leetcode 1110 Delete Nodes And Return Forest
+- [x] Leetcode 1110 Delete Nodes And Return Forest
 - [] Leetcode 93 Restore IP Addresses
 - [] Leetcode 22 Generate Parentheses
 - [] Leetcode 37 Sodoku Solver

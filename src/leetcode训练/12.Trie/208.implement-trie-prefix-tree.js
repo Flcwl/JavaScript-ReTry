@@ -18,7 +18,7 @@ var Trie = function () {
  * @return {void}
  */
 Trie.prototype.insert = function (word) {
-  const arr = word.split("");
+  const arr = word.split('');
   let data = this.data;
 
   arr.forEach((ch) => {
@@ -37,7 +37,7 @@ Trie.prototype.insert = function (word) {
  * @return {boolean}
  */
 Trie.prototype.search = function (word) {
-  const arr = word.split("");
+  const arr = word.split('');
   let data = this.data;
 
   for (let i = 0; i < arr.length; ++i) {
@@ -63,7 +63,7 @@ Trie.prototype.search = function (word) {
  * @return {boolean}
  */
 Trie.prototype.startsWith = function (prefix) {
-  const arr = prefix.split("");
+  const arr = prefix.split('');
   let data = this.data;
 
   for (let i = 0; i < arr.length; ++i) {
