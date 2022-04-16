@@ -106,6 +106,7 @@
 - [x] Leetcode 1209. Remove All Adjacent Duplicates in String II
 - [x] Leetcode 1249. Minimum Remove to Make Valid Parentheses
 - [x] Leetcode 735. Asteroid Collision
+- [x] Leetcode 22 Generate Parentheses
 
 ---
 
@@ -254,6 +255,7 @@
 - [x] Leetcode 572 Subtree of Another Tree
 - [x] Leetcode 863 All Nodes Distance K in Binary Tree
 - [x] Leetcode 394 Decode String
+- [x] Leetcode 1110 Delete Nodes And Return Forest
 
 #### 二叉搜索树
 
@@ -262,7 +264,7 @@
 - 增删查改均为 O（h）复杂度，h 为树的高度；
 - 注意不是所有的 BST 题目都需要递归，有的题目只需要 while 循环即可
 
-### Problems
+#### Problems
 
 - [x] Leetcode 230 Kth Smallest element in a BST
 - [x] Leetcode 98 Validate Binary Search Tree
@@ -273,13 +275,15 @@
 - [-] Leetcode 333 Largest BST Subtree
 - [-] Leetcode 510 Inorder Successor in BST II
 
+#### 字符串搜索 DFS
+
+- [x] Leetcode 93 Restore IP Addresses
+
 #### 图搜索 DFS
 
 - 和 BFS 一样一般需要一个 set 来记录访问过的节点
 - 避免重复访问造成死循环
 - 四个方向边探边走
-
-### Problems
 
 - [x] Leetcode 54. Spiral Matrix
 - [x] Leetcode 200. Number of Islands
@@ -287,38 +291,31 @@
 - [x] Leetcode 51 N-Queens
 - [-] Leetcode 291 Word Pattern II (I 为简单的 Hashmap 题)
 - [] Leetcode 126 Word Ladder II （I 为 BFS 题目）
-- [x] Leetcode 1110 Delete Nodes And Return Forest
-- [] Leetcode 93 Restore IP Addresses
-- [] Leetcode 22 Generate Parentheses
 - [] Leetcode 37 Sodoku Solver
 - [] Leetcode 301 Remove Invalid Parentheses
 - [] Leetcode 212 Word Search II （I, II）
-- [] Leetcode 1087 Brace Expansion
+- [-] Leetcode 1087 Brace Expansion
 - [] Leetcode 399 Evaluate Division
-- [] Leetcode 1274 Number of Ships in a Rectangle
+- [-] Leetcode 1274 Number of Ships in a Rectangle
 - [] Leetcode 1376 Time Needed to Inform All Employees
-- [] Leetcode 694 Number of Distinct Islands
-- [] Leetcode 586 Score of Parentheses
+- [-] Leetcode 694 Number of Distinct Islands
+- [-] Leetcode 586 Score of Parentheses
 
 #### 排列组合搜索 DFS
 
 - 与图类 DFS 方法一致，但是排列组合的特征更明显
 
-### Problems
-
-- [] Leetcode 17 Letter Combinations of a Phone Number
-- [] Leetcode 39 Combination Sum （I, II, III, IV）
-- [] Leetcode 90 Subsets II （重点在于如何去重）
-- [] Leetcode 47 Permutation II
-- [] Leetcode 77 Combinations
-- [] Leetcode 526 Beautiful Arrangement
+- [x] Leetcode 17 Letter Combinations of a Phone Number
+- [x] Leetcode 39 Combination Sum （I, II, III, IV）
+- [x] Leetcode 90 Subsets II （重点在于如何去重）
+- [x] Leetcode 47 Permutation II
+- [x] Leetcode 77 Combinations
+- [x] Leetcode 526 Beautiful Arrangement
 
 #### 记忆化搜索（DFS + Memoization Search）
 
 - 算是动态规划的一种，
 - 递归每次返回时同时记录下已访问过的节点特征，避免重复访问同一个节点，可以有效的把指数级别的 DFS 时间复杂度降为多项式级别
-
-### Problems
 
 - [] Leetcode 139 Word Break II
 - [] Leetcode 131 Palindrome Partitioning
