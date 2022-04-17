@@ -42,9 +42,8 @@ WordDictionary.prototype.search = function(word) {
   for (let i = 0; i < word.length; i++) {
     const ch = word[i]
     if (ch === '.') {
-      // console.log(list);
-      // [{ value: { a: { value: {} }, b: {value: {} } } }]
       list = list.reduce((acc, cur) => {
+        // 将当前父节点下所有的孩子加入到数组中
         const nextList = Object.values(cur.value)
         return acc.concat(nextList)
       }, [])
@@ -52,41 +51,36 @@ WordDictionary.prototype.search = function(word) {
       continue
     }
 
-    // [{ value: {} }, { value: {} }]
+    // 查找可能项
     list = list.filter((item) => item.value[ch] !== undefined)
 
     if (list.length === 0) return false
 
-    console.log(list, i, ch);
+    // 将当前父节点下找到的孩子加入到数组中
     list = list.reduce((acc, cur) => {
-      const nextList = Object.values(cur.value[ch].value)
-      return acc.concat(nextList)
+      const nextItem = cur.value[ch]
+      return acc.concat(nextItem)
     }, [])
-
-    console.log(list);
   }
 
-  // console.log(list);
   return list.some((item) => item.hasNode)
 };
 // @lc code=end
 
-const a = new WordDictionary();
+// const a = new WordDictionary();
 
-console.log(
-  a.addWord('at'),
-  a.addWord('and'),
-  a.addWord('an'),
-  a.addWord('add'),
-  // a.search('a'),
-  // a.search('.at'),
-  a.addWord('bat'),
-  // a.search('.at'),
-  // a.search('an.'),
-  // a.search('a.d.'),
-  a.search('b.')
-  // a.search('a.d'),
-  // a.search('.')
-);
-
-console.log(JSON.stringify(a.treeMap));
+// console.log(
+//   a.addWord('at'),
+//   a.addWord('and'),
+//   a.addWord('an'),
+//   a.addWord('add'),
+//   // a.search('a'),
+//   // a.search('.at'),
+//   a.addWord('bat'),
+//   // a.search('.at'),
+//   // a.search('an.'),
+//   // a.search('a.d.'),
+//   a.search('b.')
+//   // a.search('a.d'),
+//   // a.search('.')
+// );

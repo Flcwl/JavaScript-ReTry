@@ -370,11 +370,11 @@
 ### Problems
 
 - [x] Leetcode 208 Implement Trie (Prefix Tree)
-- [] Leetcode 211 Design Add and Search Words Data Structure
-- [] Leetcode 1268 Search Suggestions System
-- [] Leetcode 79 Word Search
+- [x] Leetcode 211 Design Add and Search Words Data Structure
+- [x] Leetcode 1268 Search Suggestions System
+- [x] Leetcode 79 Word Search
 
-## 13. TreeMap
+## 13. HashMap
 
 ### Features
 
@@ -384,9 +384,9 @@
 ### Problems
 
 - [x] Leetcode 729 My Calendar I
-- [] Leetcode 981 Time Based Key-Value Store
-- [] Leetcode 846 Hand of Straights
-- [] Leetcode 826 Most Profit Assigning Work
+- [x] Leetcode 981 Time Based Key-Value Store
+- [x] Leetcode 846 Hand of Straights
+- [x] Leetcode 826 Most Profit Assigning Work
 
 ## 14. Prefix Sum（前缀和）
 
