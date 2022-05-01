@@ -477,13 +477,13 @@ https://www.bilibili.com/video/BV13t411v7Fs?spm_id_from=333.999.0.0
 
 - [x] Leetcode 55 Jump Game
 - [x] Leetcode 45 Jump Game II
-- [] Leetcode 403 Frog Jump
-- [] Leetcode 132 Palindrome Partitioning II
+- [x] Leetcode 403 Frog Jump
+- [x] Leetcode 132 Palindrome Partitioning II
 - [] Leetcode 312 Burst Balloons
-- [] Leetcode 1143 Longest Common Subsequence
-- [] Leetcode 115 Distinct Subsequences
+- [x] Leetcode 1143 Longest Common Subsequence
+- [x] Leetcode 115 Distinct Subsequences
 - [] Leetcode 72 Edit Distance
-- [] Leetcode 91 Decode Ways
+- [x] Leetcode 91 Decode Ways
 - [] Leetcode 639 Decode Ways II
 - [] Leetcode 712 Minimum ASCII Delete Sum for Two Strings
 - [] Leetcode 221 Maximal Square
@@ -493,7 +493,7 @@ https://www.bilibili.com/video/BV13t411v7Fs?spm_id_from=333.999.0.0
 - [x] Leetcode 198 House Robber
 - [x] Leetcode 213 House Robber II
 - [] Leetcode 87 Scramble String
-- [] Leetcode 1062 Longest Repeating Substring
+- [-] Leetcode 1062 Longest Repeating Substring
 - [] Leetcode 1140 Stone Game II
 - [x] Leetcode 322 Coin Change
 - [x] Leetcode 518 Coin Change II
