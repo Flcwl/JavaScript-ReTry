@@ -12,7 +12,6 @@
  * @return {string[][]}
  */
 var findLadders = function(beginWord, endWord, wordList) {
-    
+
 };
 // @lc code=end
-
