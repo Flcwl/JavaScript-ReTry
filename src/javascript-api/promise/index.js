@@ -3,11 +3,11 @@ const RESOLVED = 'resolved';
 const REJECTED = 'rejected';
 
 export function MyPromise(fn) {
-  this.status = PENDING
-  this.value = undefined
+  this.status = PENDING // promise 当前状态
+  this.value = undefined // promise 值
 
-  this.resolvedCallbacks = []
-  this.rejectedCallbacks = []
+  this.resolvedCallbacks = [] // resolved 回调集
+  this.rejectedCallbacks = [] // rejected 回调集
 
   var self = this
 
@@ -61,25 +61,33 @@ MyPromise.prototype.then = function (onResolved, onRejected) {
   const self = this
 
   return new MyPromise((resolve, reject) => {
-    // 还等待状态，将回调加入对应等待列表中
-    if (self.status === PENDING) {
-      self.resolvedCallbacks.push(onResolved);
-      self.rejectedCallbacks.push(onRejected);
-    } else if (self.status === RESOLVED) {
+    const resolvedCallback = () => {
       try {
         const result = onResolved(self.value);
         result instanceof MyPromise ? result.then(resolve, reject) : resolve(result)
       } catch (err) {
         reject(err)
       }
-    } else if (self.status === REJECTED) {
+    }
+
+    const rejectedCallback = () => {
       try {
         const result = onRejected(self.value);
-        // 只有catch 后面就会变为 resolve
+        // 只要有 catch 后面就会变为 resolve
         result instanceof MyPromise ? result.then(resolve, reject) : resolve(result)
       } catch (err) {
         reject(err)
       }
+    }
+
+    // 还等待状态，将回调加入对应等待列表中
+    if (self.status === PENDING) {
+      self.resolvedCallbacks.push(resolvedCallback);
+      self.rejectedCallbacks.push(rejectedCallback);
+    } else if (self.status === RESOLVED) {
+      resolvedCallback()
+    } else if (self.status === REJECTED) {
+      rejectedCallback()
     }
   })
 }
@@ -117,11 +125,12 @@ MyPromise.race = function (args) {
   })
 }
 
-const aaaa = new MyPromise((_, reject) => {
+const promise = new MyPromise((resolve, reject) => {
+  resolve(2)
   reject(1)
 })
 
-aaaa.then((result) => {
+promise.then((result) => {
   console.log('result', result);
 }, (error) => {
   console.log('error', error);

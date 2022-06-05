@@ -464,7 +464,7 @@ https://www.bilibili.com/video/BV13t411v7Fs?spm_id_from=333.999.0.0
 - [x] Leetcode 70 Climbing Stairs
 - [x] Leetcode 62 Unique Paths II
 - [x] Leetcode 64 Minimum Path Sum
-- [] Leetcode 368 Largest Divisible Subset
+- [x] Leetcode 368 Largest Divisible Subset
 - [x] Leetcode 300 Longest Increasing Subsequence
 - [] Leetcode 354 Russian Doll Envelopes
 - [-] Leetcode 256 Paint House
