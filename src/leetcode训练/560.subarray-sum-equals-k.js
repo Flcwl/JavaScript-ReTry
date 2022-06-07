@@ -11,6 +11,8 @@
  * @return {number}
  */
 var subarraySum = function (nums, k) {
+  // https://www.bilibili.com/video/BV1tP4y1K7Kb
+
   // 注意是连续的，并且数可能是负的
 
   // j 标识前缀和的 subArray 个数
