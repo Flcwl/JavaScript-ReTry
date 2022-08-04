@@ -21,27 +21,31 @@ var isPalindrome = function (s) {
     );
   };
 
-  let l = 0;
-  let r = s.length - 1;
+  let left = 0;
+  let right = s.length - 1;
 
-  while (l < r) {
-    // 进行 非字母排除
-    while (l < s.length && !isAlpha(s[l])) l++;
-    while (r > -1 && !isAlpha(s[r])) r--;
-
-    // 先判断是否跨界，避免在非字母排除时位置溢出
-    if (l >= r) {
-      return true;
+  while (left < right) {
+    // 不是字母的排除并过滤
+    while (left < s.length && !isAlpha(s[left])) {
+      left++;
     }
 
-    // 两个指针指向不相等，则表明非回文
-    if (s[l].toLowerCase() !== s[r].toLowerCase()) {
+    while (right >= 0 && !isAlpha(s[right])) {
+      right--;
+    }
+
+    // 边界判断
+    // 先判断是否跨界，避免在非字母排除时位置溢出
+    if (left >= right) return true;
+
+    // 字符相等判断
+    if (s[left].toLowerCase() === s[right].toLowerCase()) {
+      left++;
+      right--;
+    } else {
+      // 两个指针指向不相等，则表明非回文
       return false;
     }
-
-    // 否则一直加到底，遍历完整个字符串
-    l++;
-    r--;
   }
 
   return true;
