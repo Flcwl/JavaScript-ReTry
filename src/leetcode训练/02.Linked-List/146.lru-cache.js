@@ -180,6 +180,13 @@ LRUCache.prototype.get = function(key) {
   this.list.unShift(node)
 
   return node.value
+
+  // const value = this.KVMap.get(key)
+
+  // // 刷新优先级，插入顺序
+  // this.KVMap.delete(key)
+  // this.KVMap.set(key, value)
+  // return value
 };
 
 /**
@@ -198,6 +205,7 @@ LRUCache.prototype.put = function(key, value) {
     const node = new ListNode(key, value)
     this.KVMap.set(key, node)
     this.list.unShift(node)
+
   }
 
   // 移动位置到最前
@@ -206,6 +214,14 @@ LRUCache.prototype.put = function(key, value) {
   this.list.unShift(node)
 
   node.value = value
+
+  // this.KVMap.delete(key)
+  // this.KVMap.set(key, value)
+
+  // if (this.KVMap.size > this.capacity) {
+  //   const tailKey = this.KVMap.keys().next().value
+  //   this.KVMap.delete(tailKey)
+  // }
 };
 
 /**

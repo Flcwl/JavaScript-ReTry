@@ -10,24 +10,28 @@
  * @return {string[][]}
  */
 var groupAnagrams = function (strs) {
+  // 字母分组
+
   const mp = new Map();
 
-  const getUID = (s) => {
-    const char = new Array(26).fill(0);
-    for (let i = 0; i < s.length; ++i) {
-      const ch = s[i];
+  const getUID = (str) => {
+    // 字母顺序
+    const chars = new Array(26).fill(0);
+    for (let i = 0; i < str.length; i++) {
+      const ch = str[i];
       // 根据题意，字符是小写
-      char[ch.charCodeAt() - 97]++;
+      const at = ch.charCodeAt() - "a".charCodeAt();
+      chars[at]++;
     }
     // 如果是空字符串，则都26个都为 0
-    return char.join(",");
+    return chars.join();
   };
 
-  for (let i = 0; i < strs.length; ++i) {
-    const s = strs[i];
-    const id = getUID(s);
+  for (let i = 0; i < strs.length; i++) {
+    const str = strs[i];
+    const id = getUID(str);
 
-    let group = mp.get(id);
+    const group = mp.get(id);
     if (!group) {
       group = [];
       mp.set(id, group);
@@ -36,8 +40,11 @@ var groupAnagrams = function (strs) {
     group.push(s);
   }
 
-  const ret = [];
-  mp.forEach((group) => ret.push(group));
+  let ret = [];
+  mp.forEach((group) => {
+    ret.push(group);
+  });
+
   return ret;
 };
 // @lc code=end

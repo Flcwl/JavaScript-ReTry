@@ -17,41 +17,45 @@ var countSubstrings = function (s) {
   // dp[i][i] = true // 单字母 baseCase
   // dp[i][i+ 1] = s[i] === s[i + 1] // 双字母 baseCase
 
+  // 遍历所有回文
+  // 0 ~ len - 1
+  // 1 ~ len - 1
+  // len - 1 ~ len - 1
+
   //    a  b  a
-  // a 1  x  x
-  // b 0  1  x
   // a 1  0  1
-  const dp = new Array(s.length).fill(null).map(
-    (_, index) => new Array(s.length).fill('x')
-  )
+  // b x  1  0
+  // a x  x  1
+  const dp = new Array(s.length)
+    .fill(null)
+    .map((_, index) => new Array(s.length).fill("x"));
 
   for (let i = 0; i < s.length; i++) {
-    dp[i][i] = true
+    dp[i][i] = true;
   }
 
   for (let i = 0; i < s.length - 1; i++) {
-    dp[i][i + 1] = s[i] === s[i + 1]
+    dp[i][i + 1] = s[i] === s[i + 1];
   }
 
   for (let i = s.length - 1; i >= 0; i--) {
     for (let j = i + 2; j < s.length; j++) {
-      dp[i][j] = dp[i + 1][j - 1] && s[i] === s[j]
+      dp[i][j] = dp[i + 1][j - 1] && s[i] === s[j];
     }
   }
 
-  let result = 0
+  let result = 0;
   for (let i = 0; i < s.length; i++) {
     for (let j = i; j < s.length; j++) {
       if (dp[i][j] === true) {
-        result++
+        result++;
       }
     }
   }
 
-  return result
+  return result;
 };
 // @lc code=end
-
 
 // console.log(countSubstrings('fdsklf'));
 

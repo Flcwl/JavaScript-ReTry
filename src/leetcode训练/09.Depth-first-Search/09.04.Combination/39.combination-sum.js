@@ -10,29 +10,29 @@
  * @param {number} target
  * @return {number[][]}
  */
-var combinationSum = function(candidates, target) {
-  const ret = []
+var combinationSum = function (candidates, target) {
+  const ret = [];
 
-  const tRet = []
+  const tRet = [];
 
   const dfs = (n, sum) => {
-    if (sum > target) return
+    if (sum > target) return;
     if (sum === target) {
-      ret.push([...tRet])
-      return
+      ret.push([...tRet]);
+      return;
     }
 
-    // i 从 n 开始，剪枝
+    // i 从 n 开始，剪枝（去重）
     for (let i = n; i < candidates.length; i++) {
-      const val = candidates[i]
-      tRet.push(val)
-      dfs(i, sum + val)
-      tRet.pop()
+      const val = candidates[i];
+      tRet.push(val);
+      dfs(i, sum + val);
+      tRet.pop();
     }
-  }
+  };
 
-  dfs(0, 0)
+  dfs(0, 0);
 
-  return ret
+  return ret;
 };
 // @lc code=end

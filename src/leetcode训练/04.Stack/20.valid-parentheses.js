@@ -11,24 +11,23 @@
  */
 var isValid = function (s) {
   const stack = [];
-  const d = {
+  const mp = {
     "{": "}",
     "[": "]",
     "(": ")",
   };
-  for (let i = 0, ch; i < s.length; ++i) {
-    ch = s[i];
+
+  for (let i = 0; i < s.length; i++) {
+    const ch = s[i];
 
     switch (ch) {
       case "}":
-      case ")":
       case "]":
-        if (ch !== stack.pop()) {
-          return false;
-        }
+      case ")":
+        if (stack.pop() !== ch) return false;
         break;
       default:
-        stack.push(d[ch]);
+        stack.push(mp[ch]);
         break;
     }
   }
