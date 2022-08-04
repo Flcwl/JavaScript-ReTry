@@ -9,33 +9,33 @@
  * @param {string} s
  * @return {number}
  */
-var lengthOfLongestSubstring = function(s) {
+var lengthOfLongestSubstring = function (s) {
   // 最大连续非重子序
-  let ret = 0
-  let left = 0
+  let maxLen = 0;
+  let start = 0;
 
   for (let i = 0; i < s.length; i++) {
     const ch = s[i];
+    let j = start;
+    let repeatedIndex = -1;
 
-    let j = left
-    let repeated = -1
-    // 查找窗口，可以使用map优化
     while (j < i) {
-      if (s[j] === ch) {
-        repeated = j
-        break
+      if (ch === s[j]) {
+        repeatedIndex = j;
+        break;
       }
-      j++
+      j++;
     }
 
-    // 过去 left 到 i 这个窗口都不重复
-    if (repeated === -1) {
-      ret = Math.max(ret, i - left + 1);
+    if (repeatedIndex === -1) {
+      // i 作为窗口右边界
+      maxLen = Math.max(maxLen, i - start + 1);
     } else {
-      left = repeated + 1
+      // 更新窗口左边界
+      start = repeatedIndex + 1;
     }
   }
 
-  return ret
+  return maxLen;
 };
 // @lc code=end

@@ -17,47 +17,40 @@
  * @param {ListNode} l2
  * @return {ListNode}
  */
-var addTwoNumbers = function(l1, l2) {
-  let sum = l1.val + l2.val
-  let carry = sum >= 10 ? 1 : 0
-  sum = sum % 10
+var addTwoNumbers = function (l1, l2) {
+  const root = new ListNode(0);
+  let tNode = root;
+  let carry = 0;
 
-  let ret = new ListNode(sum)
-  let t = ret
+  while (l1 || l2 || carry > 0) {
+    let sum = 0;
+    // 进位
+    sum += carry;
 
-  // 按位加，进位保留 加到下一位
-  while (l1.next && l2.next) {
-    l1 = l1.next
-    l2 = l2.next
+    // 累加参数1
+    if (l1) {
+      sum += l1.val;
+      l1 = l1.next;
+    }
 
-    sum = l1.val + l2.val + carry
+    // 累加参数2
+    if (l2) {
+      sum += l2.val;
+      l2 = l2.next;
+    }
 
-    ret.next = new ListNode(sum % 10)
-    carry = sum >= 10 ? 1 : 0
-    ret = ret.next
+    carry = sum >= 10 ? 1 : 0;
+    sum = sum % 10;
+
+    tNode.next = new ListNode(sum);
+    tNode = tNode.next;
   }
 
-  // 如果长度不一，需要处理继续按位加
-  l1 = l1.next ? l1 : l2.next ? l2 : null
-
-  while (l1 && l1.next) {
-    sum = carry + l1.next.val
-    ret.next = new ListNode(sum % 10)
-    carry = sum >= 10 ? 1 : 0
-    l1 = l1.next
-    ret = ret.next
-  }
-
-  // 最后如果存在进位，需要进位补一
-  if (carry === 1) {
-    ret.next = new ListNode(1)
-  }
-
-  return t
+  return root.next;
 };
 // @lc code=end
 
 function ListNode(val, next) {
-  this.val = (val === undefined ? 0 : val)
-  this.next = (next === undefined ? null : next)
+  this.val = val === undefined ? 0 : val;
+  this.next = next === undefined ? null : next;
 }

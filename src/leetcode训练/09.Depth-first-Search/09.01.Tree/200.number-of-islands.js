@@ -21,10 +21,11 @@ var numIslands = function (grid) {
     [0, -1],
     [-1, 0],
   ];
-  const visited = Array(m * n).fill(false);
-  const checkVisited = (x, y) => visited[x * n + y];
-  const setVisited = (x, y) => (visited[x * n + y] = true);
 
+  const checkVisited = (x, y) => !grid[x] || grid[x][y] !== "1";
+  const setVisited = (x, y) => (grid[x][y] = "0");
+
+  // 访问过就标记为访问过（河流），否则向四个方向探寻岛屿面积
   const dfs = (x, y) => {
     setVisited(x, y);
 
@@ -33,12 +34,8 @@ var numIslands = function (grid) {
       const nextY = y + d[i][1];
 
       // 遍历过的 "1" 则跳过
-      if (checkVisited(nextX, nextY)) {
-        continue;
-      }
-
       // 遇到河流，则到此结束
-      if (!grid[nextX] || grid[nextX][nextY] !== "1") {
+      if (checkVisited(nextX, nextY)) {
         continue;
       }
 

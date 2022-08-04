@@ -17,18 +17,18 @@
  * @return {ListNode}
  */
 var swapPairs = function (head) {
-  if (!head) return null
-  if (!head.next) return head
+  if (!head) return null;
+  if (!head.next) return head;
 
-  const aNode = head
-  const bNode = head.next
+  const aNode = head;
+  const bNode = head.next;
 
-  aNode.next = swapPairs(bNode.next)
-  bNode.next = aNode
+  aNode.next = swapPairs(bNode.next);
+  bNode.next = aNode;
 
-  return bNode
+  return bNode;
+
   // 迭代写法
   // https://www.bilibili.com/video/BV1vv41187zU
 };
 // @lc code=end
-

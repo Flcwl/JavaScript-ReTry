@@ -12,42 +12,37 @@
  */
 var searchRange = function (nums, target) {
   let ret = [-1, -1];
+  if (target < nums[0] && target > nums[nums.length - 1]) return ret;
 
-  let l = 0;
-  let r = nums.length - 1;
+  let left = 0;
+  let right = nums.length - 1;
 
-  if (target < nums[l] || target > nums[r]) {
-    return ret;
-  }
-
-  while (l < r) {
-    let mid = (r + l) >> 1;
-
+  // 向左查找
+  while (left < right) {
+    const mid = left + ((right - left) >> 1); // 向左偏移 默认
     if (target <= nums[mid]) {
-      r = mid;
+      right = mid;
     } else {
-      l = mid + 1;
+      left = mid + 1;
     }
   }
 
-  if (nums[l] === target) {
-    ret[0] = l;
-  }
+  if (nums[left] === target) ret[0] = left;
 
-  l = 0;
-  r = nums.length - 1;
-  while (l < r) {
-    let mid = ((r + l) >> 1) + 1;
+  left = 0;
+  right = nums.length - 1;
+
+  // 向右查找
+  while (left < right) {
+    const mid = left + ((right - left) >> 1) + 1; // 向右偏移 +1
     if (target >= nums[mid]) {
-      l = mid;
+      left = mid;
     } else {
-      r = mid - 1;
+      right = mid - 1;
     }
   }
 
-  if (nums[l] === target) {
-    ret[1] = l;
-  }
+  if (nums[left] === target) ret[1] = left;
 
   return ret;
 };

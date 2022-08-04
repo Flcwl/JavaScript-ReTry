@@ -11,8 +11,8 @@
  */
 var maxSubArray = function (nums) {
   // nums 长度至少为 1
-  let ret = nums[0];
-  let sum = ret;
+  let ret = nums[0]; // 保证最大结果
+  let sum = ret; // 保证连续性累加
   const len = nums.length;
 
   for (let i = 1, t; i < len; ++i) {

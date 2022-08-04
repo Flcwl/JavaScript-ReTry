@@ -15,25 +15,26 @@ var subarraySum = function (nums, k) {
 
   // 注意是连续的，并且数可能是负的
 
-  // j 标识前缀和的 subArray 个数
-  // dp[j] = dp[j - k]
+  // dp 标识可构成前缀和 j 的 subArray 个数
+  // dp[j] = dp[j - k] + 1
 
-  let result = 0
+  let result = 0;
 
-  const mp = new Map()
-  mp.set(0, 1)
+  const mp = new Map();
+  mp.set(0, 1); // 差值为 0 情况下算一种组合
 
-  let prefixSum = 0
+  let prefixSum = 0;
   for (let i = 0; i < nums.length; i++) {
-    prefixSum += nums[i]
-    const diff = prefixSum - k
-    result += (mp.get(diff) || 0)
+    // sum(i, j) = prefixSum[j] - prefixSum[i] === k
 
-    mp.set(prefixSum, (mp.get(prefixSum) || 0) + 1)
+    prefixSum += nums[i];
+    const diff = prefixSum - k;
+    result += mp.get(diff) || 0;
+
+    mp.set(prefixSum, (mp.get(prefixSum) || 0) + 1);
   }
 
-  return result
-
+  return result;
 
   // // 前缀和 计算 sum[i][j] = prefixSum[j] - prefixSum[i]
   // const prefixSum = [0]
@@ -53,4 +54,3 @@ var subarraySum = function (nums, k) {
   // return result
 };
 // @lc code=end
-
