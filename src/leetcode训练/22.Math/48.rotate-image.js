@@ -15,7 +15,7 @@ var rotate = function (matrix) {
   // 4 5 6
   // 7 8 9
 
-  // 对角线交换 1 5 9 线
+  // 对角线交换： 1 5 9 为线
   for (let i = 0; i < n; i++) {
     const m = matrix[i].length;
     for (let j = i; j < m; j++) {
@@ -26,7 +26,7 @@ var rotate = function (matrix) {
   // 2 5 8
   // 3 6 9
 
-  // 垂直左右交换 4 5 6 线
+  // 垂直左右交换： 4 5 6 为线
   for (let i = 0; i < n; i++) {
     const m = matrix[i].length;
     const halfM = m >> 1;

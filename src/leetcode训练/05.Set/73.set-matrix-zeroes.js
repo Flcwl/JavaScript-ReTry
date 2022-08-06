@@ -13,6 +13,7 @@ var setZeroes = function (matrix) {
   const row = new Set();
   const col = new Set();
 
+  // 找到所有需要处理为 0 的行和列
   for (let i = 0; i < matrix.length; i++) {
     for (let j = 0; j < matrix[i].length; j++) {
       if (matrix[i][j] === 0) {
@@ -23,11 +24,11 @@ var setZeroes = function (matrix) {
   }
 
   row.forEach((i) => {
-    matrix[i].forEach((_, index) => (matrix[i][index] = 0));
+    matrix[i].forEach((_, j) => (matrix[i][j] = 0));
   });
 
   col.forEach((j) => {
-    matrix.forEach((item) => (item[j] = 0));
+    matrix.forEach((row) => (row[j] = 0));
   });
 
   return matrix;
