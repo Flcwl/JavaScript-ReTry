@@ -13,22 +13,22 @@ var longestPalindrome = function (s) {
   let ret = s[0];
 
   const findPalindrome = (left, right) => {
-    while (s[left] === s[right] && left >= 0 && right <= s.length) {
+    while (left >= 0 && right < s.length && s[left] === s[right]) {
       left--;
       right++;
     }
 
-    const t = s.slice(left + 1, right);
+    const tRet = s.slice(left + 1, right);
 
-    if (t.length > ret.length) {
-      ret = t;
+    if (tRet.length > ret.length) {
+      ret = tRet;
     }
   };
 
-  for (let i = 1; i < s.length; i++) {
+  for (let i = 0; i < s.length; i++) {
     // aaaa
     findPalindrome(i - 1, i);
-    // aaa
+    // aba
     findPalindrome(i - 2, i);
   }
 

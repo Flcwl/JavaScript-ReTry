@@ -14,33 +14,31 @@ var spiralOrder = function (matrix) {
   const n = matrix[0].length;
   const len = m * n;
 
-  const d = [
+  const result = [];
+
+  const directions = [
     [0, 1],
     [1, 0],
     [0, -1],
     [-1, 0],
   ];
-  let r = 0;
-  const ret = [];
 
-  const dfs = (i, j) => {
-    const val = matrix[i][j];
-    ret.push(val);
-    // 标记为 visited
-    matrix[i][j] = undefined;
-    // 遍历完，结束递归
-    if (ret.length === len) return;
+  let dir = 0;
 
-    // 最多转折 1 次
-    for (let l = 0; l < 2; ++l) {
-      let nextI = i + d[r][0];
-      let nextJ = j + d[r][1];
+  const dfs = (x, y) => {
+    result.push(matrix[x][y]);
+    matrix[x][y] = undefined;
 
-      // 越界，转换方向
-      if (!matrix[nextI] || matrix[nextI][nextJ] === undefined) {
-        r = (r + 1) % 4;
+    if (result.length === len) return;
+
+    for (let i = 0; i < 2; i++) {
+      const nextX = x + directions[dir][0];
+      const nextY = y + directions[dir][1];
+
+      if (!matrix[nextX] || matrix[nextX][nextY] === undefined) {
+        dir = (dir + 1) % 4;
       } else {
-        dfs(nextI, nextJ);
+        dfs(nextX, nextY);
         break;
       }
     }
@@ -48,6 +46,6 @@ var spiralOrder = function (matrix) {
 
   dfs(0, 0);
 
-  return ret;
+  return result;
 };
 // @lc code=end

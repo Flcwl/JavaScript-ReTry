@@ -14,30 +14,31 @@ var groupAnagrams = function (strs) {
 
   const mp = new Map();
 
-  const getUID = (str) => {
-    // 字母顺序
+  const genUID = (str) => {
     const chars = new Array(26).fill(0);
+
+    // ascii 映射表 以字母顺序生成唯一id
     for (let i = 0; i < str.length; i++) {
       const ch = str[i];
-      // 根据题意，字符是小写
+      // 根据题意，字符是小写英文
       const at = ch.charCodeAt() - "a".charCodeAt();
       chars[at]++;
     }
-    // 如果是空字符串，则都26个都为 0
+
     return chars.join();
   };
 
   for (let i = 0; i < strs.length; i++) {
     const str = strs[i];
-    const id = getUID(str);
+    const sid = genUID(str);
 
-    const group = mp.get(id);
+    let group = mp.get(sid);
     if (!group) {
       group = [];
-      mp.set(id, group);
+      mp.set(sid, group);
     }
 
-    group.push(s);
+    group.push(str);
   }
 
   let ret = [];
