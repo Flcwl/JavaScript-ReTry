@@ -19,20 +19,22 @@ var isMatch = function (s, p) {
 
   // 根据题意，p 需要完全匹配整个字符串 s
   const dig = (sIndex, pIndex) => {
+    // 注意所有逻辑基于 pIndex 于 p.length 关系进行逻辑执行
+
     // 匹配遍历结束，则字符串匹配完才表示匹配成功
     if (pIndex >= p.length) return sIndex >= s.length;
 
     // 当前首字符匹配到
-    const match =
+    const matched =
       sIndex < s.length && (s[sIndex] === p[pIndex] || p[pIndex] === ".");
 
     // 1. 连续匹配 * 规则
     if (pIndex + 1 < p.length && p[pIndex + 1] === "*") {
       // 结束 * 匹配 或 不结束 * 匹配
-      return dig(sIndex, pIndex + 2) || (match && dig(sIndex + 1, pIndex));
+      return dig(sIndex, pIndex + 2) || (matched && dig(sIndex + 1, pIndex));
     } else {
       // 2. 普通匹配下一个规则
-      return match && dig(sIndex + 1, pIndex + 1);
+      return matched && dig(sIndex + 1, pIndex + 1);
     }
   };
 
