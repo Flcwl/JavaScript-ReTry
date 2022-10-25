@@ -55,6 +55,7 @@ var gameOfLife = function (board) {
     }
   }
 
+  // 如何优化空间复杂度 不克隆
   for (let i = 0; i < board.length; i++) {
     const row = board[i];
     for (let j = 0; j < row.length; j++) {
